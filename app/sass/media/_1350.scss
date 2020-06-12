@@ -1,0 +1,23 @@
+@media screen and (max-width: 1350px) {
+  // full page nav
+  .fullPageNav {
+    left: 20px;
+  }
+  // full page nav end
+  // single-product-page
+  .product-page {
+    .product_next_btn {
+      bottom: 100px;
+    }
+    .single-page-container{
+      max-width: 1500px;
+      .product-overlay .product-content {
+        padding-left: 50px;
+        .img-block {
+          padding-left: 75px; 
+        }
+      }
+    }
+  }
+  // single-product-page end
+}

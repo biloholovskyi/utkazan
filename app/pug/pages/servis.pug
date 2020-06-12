@@ -1,0 +1,103 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = 'Сервисная служба'
+
+block content
+    include ../modules/header-white
+    include ../modules/prelouder
+    include ../modules/mobile-modal
+    include ../modules/main-modal
+    
+
+    section(style='background-image: url(./media/image/servis_bg.png)').servis
+        .m-container
+            .m-row
+                .m-col.m-col--5.m-col-md--10
+                    .servis-content.anhors  
+                        h1 Сервисная служба
+                        p Одним из главных достоинств компании “Дефотек” является сервисная служба, специалисты которой обеспечивают техническое сопровождение клиентов и готовы в любой момент прийти на помощь технологам, работающим на сахарных заводах.
+                        .about__numbers.servis__numbers
+                            .servis__number.anim-number 24
+                            .servis__desc часа
+                        
+                            .servis__number.second-block.anim-number 7 
+                            .servis__desc дней в неделю
+                            
+                        a(href="#servis").servis__button-down 
+
+                .m-col.m-col--5   
+
+    section.our_servis#servis
+        .m-container
+            .m-row
+                .m-col.m-col--5.m-col-sm--10.m-col-md--5
+                    .our_servis--text
+                        h2 Наши услуги
+                        p Анализ солей кальция и тепловой схемы
+                        p Определение точек дозирования и монтаж насосного оборудования
+                        p Безвозмездная аренда насосного оборудования
+                        p Технологические консультации 24/7 
+                        p  Контроль параметров работы ВУ 
+                        p Оперативный выезд специалиста сервисной службы     
+                .m-col.m-col--2.m-col-md--1  
+                .m-col.m-col--3.m-col-sm--10.m-col-md--4
+                    .our_servis--text2
+                        p Инженеры сервисной службы помогут разобраться в выборе технологических добавок и проконсультируют, как и за счет чего можно сократить издержки производства.
+                        p.small-desc #[span Технологическое совершенство] наших продуктов и техническое мастерство сервисной службы дарит нашим клиентам железную уверенность каждый производственный день.
+                        .partner__alert
+                            .alert-block
+                                .info
+                                .number 3
+                                .desc высококвалифицированных инженера компании “Дефотек” готовы выехать к Вам на завод  
+
+    section.home-man#slider-servis
+        .m-container.home-man__container
+            .m-row.home-man__row
+                .m-col.m-col--2
+                .m-col.m-col--8
+                    img.home-man__poligon(src='./media/icon/big-poligon.svg')
+            .m-row.servis-row_KD
+                .m-col.m-col--3.m-col-xs--10.home-man__flex-wrapper
+                    .home-man__text-icon.home-man-title Наши инженеры
+                    h3.home-man__name.home-man__name__KD.home-man__name--current Константин Сахаровский
+                    h3.home-man__name.home-man__name__KD Константин Сахаровский 2
+                    h3.home-man__name.home-man__name__KD Константин Сахаровский 3
+                    .home-man__post.home-man__post--current Генеральный директор
+                    .home-man__post Генеральный директор 2
+                    .home-man__post Генеральный директор 3
+                    .home-man__about.home-man__KD.home-man__about--current Мы располагаем современным грузовым парком грузоподъемностью до 21 тонны на базе новых тягачей Renault T-series, Volvo FH с тентованными полуприцепами.
+                    .home-man__about.home-man__KD 2Мы располагаем современным грузовым парком грузоподъемностью до 21 тонны на базе новых тягачей Renault T-series, Volvo FH с тентованными полуприцепами.
+                    .home-man__about.home-man__KD 3Мы располагаем современным грузовым парком грузоподъемностью до 21 тонны на базе новых тягачей Renault T-series, Volvo FH с тентованными полуприцепами.
+                    .home-man__nav
+                        .nav-item.prev
+                        .nav-item.next
+                .m-col.m-col--5.m-col-md--6.m-col-xs--10
+                    .home-man__big-img-wrapp
+                        img.home-man__big-img.home-man__big-img--current(src='./media/image/man-big.png')
+                        img.home-man__big-img.home-man__big-img--hidden(src='./media/image/photo.jpg')
+                        img.home-man__big-img.home-man__big-img--hidden(src='./media/image/man-big.png')
+                .m-col.m-col--2.m-col-md--1.m-col-xs--10
+                    .home-man__list
+                        .item.item--active(style='background-image: url(./media/image/man-1.png)')
+                        .item(style='background-image: url(./media/image/man-2.png)')
+                        .item(style='background-image: url(./media/image/man-1.png)')                                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- include ../modules/footer                        

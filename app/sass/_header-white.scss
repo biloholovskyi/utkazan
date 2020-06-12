@@ -1,0 +1,25 @@
+.header-white {
+    background-color: #fff;
+    .header__nav {
+        .nav__link {
+            color: #3C3C3B;
+            opacity: 0.5;
+        }
+
+        .nav__link:hover {
+            color: #3586DC;
+            opacity: 1;
+        }
+    }
+    .header__button {
+        background: #3586DC;
+    }
+    .header__button:hover {
+        background: transparent;
+        color: #3586DC;
+        border: 2px solid #5ba4f2;
+    }
+    .header__button::before {
+        background-image: url(../media/icon/button-icon3.svg);
+    }
+}

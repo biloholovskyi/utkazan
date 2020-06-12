@@ -1,0 +1,13 @@
+.main-modal
+  .main-modal__body
+    .modal-body__close
+    .modal-body__title Обратная связь
+    .modal-desc__text Свяжитесь со мной по #[.modal-desc__wrapper #[span.text-active телефону] #[span.text-check.text-check--tel] #[span.text-disabled почте]]
+    .modal-desc__small-text Укажите предпочитаемый способ связи
+    form.modal-form
+      input.modal-input(type='text' name='contact' placeholder='Укажите номер телефона' required)
+      textarea.modal-input.modal-input--text(name='text' placeholder='Что Вас интересует?')
+      input.modal-submit(type='submit' value='Отправить')
+    .modal-political
+      .political__check.political__check--active
+      .political__text Я согласен на #[a(href='#' target='_blank') обработку персональных данных]

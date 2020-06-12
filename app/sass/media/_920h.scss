@@ -1,0 +1,41 @@
+@media screen and (max-height: 920px) {
+  .home__about {
+    padding-top: 100px;
+
+    .about__numbers {
+      margin-top: 0;
+
+      .about__number {
+        font-size: 70px;
+      }
+
+      .about__desc {
+        margin-bottom: 60px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .home-man__about {
+    margin-bottom: 100px;
+  }
+
+  // product page 
+  .products {
+    .products-title h1 {
+      margin-bottom: 20px;
+    }
+
+    .product-slider {
+      padding: 50px 0 0;
+    }
+  }
+
+  // servis page
+  .servis {
+    padding: 200px 0 0;
+  }
+}

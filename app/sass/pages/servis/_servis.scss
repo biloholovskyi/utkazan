@@ -1,0 +1,142 @@
+.servis{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 300px 0;
+    height: 100vh;
+    position: relative;
+  
+    .servis-content {
+        h1 {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 67px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin-bottom: 50px;
+        }
+
+        .servis__numbers {
+            display: flex;
+            margin-bottom: 136px;
+            .servis__number{
+                font-family: Bank Sans EF CY;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 90px;
+                line-height: 108px;
+                letter-spacing: -0.1em;
+                color: #FFFFFF;
+            }
+            .servis__desc {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+                padding-left: 20px;
+                padding-top: 12px;
+            }
+            .second-block{
+                padding-left: 80px;
+            }
+        }
+       
+        .servis__button-down {
+            position: relative;
+            cursor: pointer;
+            transition: all .3s;
+            bottom: 75px;
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.15);
+            }
+
+            &:after{
+                content: ' ';
+                width: 86px;
+                height: 86px;
+                position: absolute;
+                background-size: 22px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(../media/icon/arrow.svg);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.05);
+            }
+          }
+    }
+}
+
+// OUR SERVIS BLOCK
+.our_servis{
+    width: 100%;
+    padding: 200px 0 0;
+    background-color: #F9F9F9;
+    
+    &--text {
+        h2 {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 58px;
+            letter-spacing: -0.03em;
+            color: #2E2D2C;
+            margin-bottom: 50px;
+        }
+        p {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            border-top: 2px solid #E0E0E0;
+            padding: 25px 0;
+            color: #3C3C3B;
+
+        }
+
+    }
+    &--text p:last-child {
+        border-bottom: 2px solid #E0E0E0;
+    }
+    &--text2 {
+        p {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            color: #2E2D2C;
+            padding-bottom: 70px;
+        }
+
+        .small-desc {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            color: #3C3C3B;
+            padding-bottom: 369px;
+            span {
+                color: #F97C36;
+            }
+        }
+    }
+}

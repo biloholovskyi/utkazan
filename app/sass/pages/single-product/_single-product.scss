@@ -1,0 +1,305 @@
+.product-page {
+  padding-top: 216px;
+  background-color: #F9F9F9;
+  position: relative;
+  overflow-x: hidden;
+
+  .product_back_btn {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(150, 150, 150, 0.8);
+    transition: .5s all;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-left: 50px;
+    margin-left: 40px;
+    position: absolute;
+  }
+
+  .product_back_btn:before {
+    content: " ";
+    width: 28px;
+    height: 28px;
+    background-image: url(../media/icon/arrow-left.svg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .product_back_btn:hover {
+    color: #3586DC;
+  }
+
+  .product_next_btn {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #eee;
+    top: 50%;
+    right: -60px;
+    margin-top: -60px;
+    z-index: 10;
+    transition: .4s;
+
+    svg {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 25px;
+      width: 22px;
+      height: 22px;
+      object-fit: cover;
+      object-position: center;
+      transition: .4s;
+    }
+
+  }
+
+  .product_next_btn svg path {
+    transition: .4s;
+  }
+
+  .product_next_btn:hover svg path {
+    fill: #3586DC;
+  }
+
+  .product-title {
+    text-align: center;
+
+    h1 {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 45px;
+      line-height: 43px;
+      letter-spacing: -0.02em;
+      color: #3C3C3B;
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+  }
+
+  .product-desc {
+    h2 {
+      font-family: Bank Sans EF CY;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      color: #3C3C3B;
+      margin-bottom: 40px;
+
+      span {
+        color: #3586DC;
+      }
+    }
+
+    p {
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: #757575;
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      font-family: Bank Sans EF CY;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: #3C3C3B;
+    }
+  }
+
+  .product-overlay {
+    width: 2000px;
+    height: 737px;
+    background-color: #fff;
+    position: relative;
+
+    .product-content {
+      display: flex;
+      padding-left: 70px;
+      padding-top: 93px;
+
+      .desc {
+
+        .desc-title {
+          display: flex;
+          margin-bottom: 15px;
+          align-items: center;
+
+          h3 {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #3C3C3B;
+          }
+
+          img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            object-position: center;
+            margin-right: 12px;
+          }
+
+        }
+
+        p {
+          font-family: Proxima Nova;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 20px;
+          color: #757575;
+          max-width: 270px;
+          margin-bottom: 50px;
+        }
+
+        .specialist {
+          display: flex;
+
+          .foto img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            object-position: center;
+            margin-right: 15px;
+          }
+
+          .name {
+            margin-bottom: 30px;
+
+            h3 {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 24px;
+              margin-bottom: 9px;
+              color: #3C3C3B;
+            }
+
+            p {
+              font-family: Proxima Nova;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 135%;
+              margin-bottom: 0;
+              color: #757575;
+            }
+          }
+
+
+        }
+
+        .contact-specialist {
+          margin-bottom: 6px;
+        }
+
+        .mail {
+          margin-bottom: 15px;
+
+          a {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 135%;
+            color: #3C3C3B;
+            text-decoration: none;
+          }
+        }
+
+        .phone {
+          margin-bottom: 55px;
+
+          a {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 135%;
+            color: #3C3C3B;
+            text-decoration: none;
+          }
+        }
+
+        .header__button {
+          border: 2px solid #5BA4F2;
+          color: #3C3C3B;
+
+        }
+
+        .header__button:before {
+          content: "";
+          background-image: url(../media/icon/button-icon2.svg);
+        }
+
+        .header__button:hover {
+          color: #fff;
+          background: #3586DC;
+        }
+
+      }
+
+      .img-block {
+        padding-left: 125px;
+
+        .barrel {
+          margin-bottom: 24px;
+          position: relative;
+          width: 314px;
+          height: 477px;
+
+          .barrel-img {
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+          }
+
+          .bar-product {
+            position: absolute;
+            bottom: 38px;
+            left: -36px;
+            width: 85px;
+            height: 85px;
+            object-position: center;
+            object-fit: cover;
+          }
+        }
+
+        p {
+          max-width: 230px;
+          text-align: center;
+          margin: 0 auto;
+          font-family: Proxima Nova;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+          color: #ABABAB;
+        }
+      }
+    }
+  }
+
+}

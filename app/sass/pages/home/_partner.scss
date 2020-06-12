@@ -1,0 +1,104 @@
+.partner {
+  background: #3586DC;
+
+  &__fon-img {
+    position: absolute;
+    object-fit: contain;
+    object-position: left top;
+    top: 0;
+    right: 0;
+  }
+
+  &__container {
+    height: 100%;
+  }
+
+  &__row {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__title {
+    font-family: 'Bank Sans EF CY', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 68px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .partner__img {
+      margin-bottom: 60px;
+      margin-right: 50px;
+      max-width: calc(100% / 3 - 50px);
+
+      &--last {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__alert {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    .alert-block {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 35px 70px 35px 30px;
+
+      .number {
+        font-family: 'Bank Sans EF CY', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 70px;
+        line-height: 84px;
+        letter-spacing: -0.1em;
+        color: #F97C36;
+        margin-right: 20px;
+        margin-top: 15px;
+      }
+
+      .desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  &__mobile {
+    display: none;
+  }
+}

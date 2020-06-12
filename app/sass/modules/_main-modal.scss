@@ -1,0 +1,211 @@
+.main-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  background: rgba(29, 29, 29, 0.75);
+  overflow: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &__body {
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 50px 30px 30px 30px;
+    position: relative;
+
+    .modal-body__close {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 0;
+      right: -55px;
+      background-image: url(../media/icon/close.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    .modal-body__title {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #3C3C3B;
+      margin-bottom: 50px;
+    }
+
+    .modal-desc__text {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 135%;
+      color: #3C3C3B;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .modal-desc__wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      span {
+        margin-left: 8px;
+      }
+
+      .text-active {
+        color: #F97C36;
+      }
+
+      .text-disabled {
+        color: rgba(60, 60, 59, 0.5);
+      }
+
+      .text-check {
+        display: block;
+        width: 40px;
+        min-width: 40px;
+        height: 23px;
+        background: #E6E6E6;
+        border-radius: 35px;
+        margin-left: 11px;
+        margin-right: 3px;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 15px;
+          height: 15px;
+          background: #F97C36;
+          border-radius: 50%;
+          top: 4px;
+          position: absolute;
+          transition: all .3s;
+        }
+
+        &--tel {
+          &::after {
+            left: 4px;
+          }
+        }
+
+        &--mail {
+          &::after {
+            left: calc(100% - 19px);
+          }
+        }
+      }
+    }
+
+    .modal-desc__small-text {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 135%;
+      color: #757575;
+      text-align: center;
+    }
+
+    .modal-form {
+      max-width: 100%;
+      min-width: 561px;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .modal-input {
+        width: 100%;
+        border: none;
+        background: #EEEEEE;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 135%;
+        color: #757575;
+
+        &--text {
+          resize: none;
+          height: 155px;
+        }
+      }
+
+      .modal-submit {
+        cursor: pointer;
+        background: #3586DC;
+        border-radius: 5px;
+        border: none;
+        display: initial;
+        width: max-content;
+        padding: 19px 72px;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        transition: all .3s;
+
+        &:hover {
+          background: #276DB8;
+        }
+      }
+    }
+
+    .modal-political {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 65px;
+
+      .political__check {
+        width: 15px;
+        min-width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        background-color: #3586DC;
+        border-radius: 2px;
+        transition: all .3s;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 11px;
+        
+        &--active {
+          background-image: url(../media/icon/check.svg);
+        }
+      }
+
+      .political__text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 135%;
+        text-align: center;
+        color: #757575;
+
+        a {
+          color: #3586DC;
+        }
+      }
+    }
+  }
+}

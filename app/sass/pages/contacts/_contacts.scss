@@ -1,0 +1,99 @@
+.contacts {
+    width: 100%;
+    background: #3586dc;
+    padding-top: 235px;
+    .col-team {
+        max-width: calc(100% / 12 * 3);
+    }
+    .contacts-title {
+        h1 {
+            font-family: Bank Sans EF CY;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 56px;
+            line-height: 67px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+    }
+    .content-row { 
+        border-bottom: 2px solid #4594E8;
+        margin-bottom: 60px;
+        .contacts-content {
+            display: flex;
+            .contacts-item {
+                margin-bottom: 50px;
+                h3 {
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                    opacity: 0.6;
+                    margin-bottom: 20px;
+                }
+                p,a {
+                    font-family: Proxima Nova;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+            }    
+        }
+    }
+    
+    .contacts-team {
+        .photo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+            svg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .name {
+            margin-bottom: 20px;
+            p {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+           
+            p {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+                opacity: 0.6;
+                margin-bottom: 10px;
+            }
+            a {
+                font-family: Proxima Nova;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF; 
+               
+            }
+        }
+    }
+}

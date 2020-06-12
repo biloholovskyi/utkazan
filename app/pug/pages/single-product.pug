@@ -1,0 +1,77 @@
+extends ../layout/main
+
+block variables
+  - const pageTitle = 'Продукт'
+
+block content
+    include ../modules/header-white
+    include ../modules/prelouder
+    include ../modules/mobile-modal
+    include ../modules/main-modal 
+
+   
+    section.product-page  
+        a(href="./products.html").product_back_btn Вся продукция 
+       
+            
+ 
+        .m-container.single-page-container 
+            .m-row
+                .m-col
+                    .product-title
+                        h1 Пеногасители
+            .m-row
+                .m-col.m-col--4.m-col-md--10
+                    .product-desc
+                        h2 DEFO#[span SPUM] 
+                        p Высокоэффективные средства предупреждения и подавления пены. Наши пеногасители - это многолетний опыт, инновации и ноу-хау от крупнейшего производителя пеногасителей в Евросоюзе - PMC OUVRIE. Вот уже более 100 лет компания живет производством пеногасителей для различных отраслей промышленности, внедряя самые передовые и инновационные технологии производства.
+                        #accordeon
+                            
+                                button.head Для транспортерно-моечной воды
+                                     svg(width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M10.2414 14.778L18.6965 6.32272C18.8922 6.12716 19 5.86611 19 5.58775C19 5.3094 18.8922 5.04834 18.6965 4.85278L18.074 4.23011C17.6683 3.82494 17.009 3.82494 16.604 4.23011L9.50394 11.3302L2.39599 4.22224C2.20028 4.02668 1.93937 3.9187 1.66117 3.9187C1.38266 3.9187 1.12176 4.02668 0.925894 4.22224L0.303534 4.84491C0.107819 5.04062 0 5.30152 0 5.57988C0 5.85823 0.107819 6.11929 0.303534 6.31484L8.76634 14.778C8.96268 14.974 9.22481 15.0817 9.50348 15.081C9.78322 15.0817 10.0452 14.974 10.2414 14.778Z" fill="#C7C7C7")
+                                .hidden Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veniam vel totam, fuga tempora dolorem mollitia dolor laborum sit veritatis quisquam velit temporibus magni?
+                            
+                            
+                                button.head Для внутреннего производства
+                                     svg(width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M10.2414 14.778L18.6965 6.32272C18.8922 6.12716 19 5.86611 19 5.58775C19 5.3094 18.8922 5.04834 18.6965 4.85278L18.074 4.23011C17.6683 3.82494 17.009 3.82494 16.604 4.23011L9.50394 11.3302L2.39599 4.22224C2.20028 4.02668 1.93937 3.9187 1.66117 3.9187C1.38266 3.9187 1.12176 4.02668 0.925894 4.22224L0.303534 4.84491C0.107819 5.04062 0 5.30152 0 5.57988C0 5.85823 0.107819 6.11929 0.303534 6.31484L8.76634 14.778C8.96268 14.974 9.22481 15.0817 9.50348 15.081C9.78322 15.0817 10.0452 14.974 10.2414 14.778Z" fill="#C7C7C7")
+                                .hidden Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.    
+
+                            
+                                button.head ПАВы для вакуум-аппаратов
+                                     svg(width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M10.2414 14.778L18.6965 6.32272C18.8922 6.12716 19 5.86611 19 5.58775C19 5.3094 18.8922 5.04834 18.6965 4.85278L18.074 4.23011C17.6683 3.82494 17.009 3.82494 16.604 4.23011L9.50394 11.3302L2.39599 4.22224C2.20028 4.02668 1.93937 3.9187 1.66117 3.9187C1.38266 3.9187 1.12176 4.02668 0.925894 4.22224L0.303534 4.84491C0.107819 5.04062 0 5.30152 0 5.57988C0 5.85823 0.107819 6.11929 0.303534 6.31484L8.76634 14.778C8.96268 14.974 9.22481 15.0817 9.50348 15.081C9.78322 15.0817 10.0452 14.974 10.2414 14.778Z" fill="#C7C7C7")
+                                .hidden Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.        
+
+                        h3 Базовая химия
+                        p Для вас также всегда доступна базовая химия, предназначенная для производства сахара:
+                .m-col.m-col--6.m-col-md--10
+                    .product-overlay
+                        a(href="#").product_next_btn
+                            svg(width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(d="M17.111 10.1416L7.32071 0.351461C7.09428 0.124845 6.792 0 6.4697 0C6.14739 0 5.84512 0.124845 5.61868 0.351461L4.89769 1.07227C4.42854 1.54195 4.42854 2.30533 4.89769 2.7743L13.1188 10.9954L4.88857 19.2257C4.66213 19.4523 4.53711 19.7544 4.53711 20.0765C4.53711 20.399 4.66213 20.7011 4.88857 20.9279L5.60956 21.6485C5.83617 21.8752 6.13827 22 6.46057 22C6.78288 22 7.08515 21.8752 7.31159 21.6485L17.111 11.8495C17.338 11.6222 17.4626 11.3186 17.4619 10.996C17.4626 10.6721 17.338 10.3687 17.111 10.1416Z" fill="#fff")
+                        .product-content
+                            .desc
+                                .desc-title
+                                    img(src="./media/icon/product-icon.svg", alt="icon") 
+                                    h3 Разработка на заказ
+                                p Также в дополнение к широкой линейке пеногасителей мы можем предложить услугу разработки пеногасителей для конкретных нужд и задач клиента.
+                                .specialist
+                                    .foto
+                                        img(src="./media/icon/specialist.png", alt="foto")   
+                                    .name
+                                        h3 Валиева Жанна
+                                        p Специалист по продукту
+
+                                p.contact-specialist Контакты специалиста
+                                .mail
+                                    a(href="#") janna_valieva@defotec.ru 
+                                .phone
+                                    a(href="#")  +7 (927) 544-09-09 
+                                button.header__button.main-modal-show Связаться             
+                            .img-block      
+                                .barrel
+                                    img(src="./media/image/barrel.png", alt="barrel").barrel-img
+                                    img(src="./media/icon/barrel-product.svg", alt="icon").bar-product   
+                                p Фото продукции может отличаться от настоящего продукта

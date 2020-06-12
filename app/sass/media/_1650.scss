@@ -1,0 +1,32 @@
+@media screen and (max-width: 1660px) {
+  // industry
+  .industry__left {
+    .alert-block {
+      padding: 25px 20px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+  // industry end
+
+  // map
+  .map__img {
+    margin-top: -100px;
+  }
+  .map__big-text {
+    .big__title {
+      font-size: 35px;
+      line-height: 120%;
+    }
+  }
+  // map end
+
+  // home man
+  .home-man__row {
+    bottom: -280px;
+  }
+  // home man end
+  // single-product-page
+}

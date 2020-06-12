@@ -1,0 +1,267 @@
+@media screen and (max-height: 710px) {
+  .home__first {
+    .first__text {
+      font-size: 18px;
+      line-height: 120%;
+      margin-top: -305px;
+    }
+
+    .first__wrapper {
+      .first__title {
+        font-size: 40px;
+        line-height: 120%;
+        margin-top: 80px;
+      }
+    }
+
+    .first__buttons {
+      margin-top: 50px;
+
+      &:last-child {
+        margin-top: 0;
+      }
+    }
+
+    .first__button-down {
+      width: 45px;
+      height: 45px;
+      background-size: 12px;
+      bottom: 50px;
+    }
+  }
+
+  // home about
+  .home__about {
+    .about__title {
+      font-size: 28px;
+      line-height: 120%;
+      margin-bottom: 25px;
+
+      br {
+        display: none;
+      }
+    }
+
+    .about__text {
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 35px;
+    }
+
+    .about__video {
+      width: 230px;
+      height: 230px;
+      position: relative;
+
+      .video__poster {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .about__numbers {
+      margin-top: 0;
+
+      .about__number {
+        font-size: 50px;
+        line-height: 120%;
+
+        &::after {
+          top: -2.5px;
+          left: -8.5px;
+        }
+      }
+
+      .about__desc {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  // home about end
+
+  // industry
+  .industry {
+    padding-top: 200px;
+
+    .industry__list {
+      max-height: calc(100vh - 200px);
+    }
+  }
+  // industry end
+
+  // map
+  .map {
+    padding-top: 100px;
+  }
+  // map end
+
+  // fon video
+  .fon-video {
+    .fon-video__info {
+      .fon-video__title {
+        font-size: 28px;
+        line-height: 120%;
+        margin-bottom: 30px;
+      }
+
+      .fon-video__text {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 35px;
+      }
+
+      .fon-video__number {
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+
+    .fon-video__left {
+      .fon-video__logo {
+        width: 123px;
+        min-width: 123px;
+        height: 123px;
+      }
+
+      .fon-video__logo-text {
+        font-size: 24px;
+        line-height: 120%;
+      }
+    }
+  }
+  // fon video end
+
+  // home man
+  .home-man__nav {
+    padding-bottom: 70px;
+
+    .nav-item {
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+
+      &::after {
+        background-size: 12px;
+      }
+    }
+  }
+
+  .home-man__list {
+    padding-bottom: 70px;
+
+    .item {
+      width: 50px;
+      height: 50px;
+
+      &--active {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
+  .home-man__text-icon {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .home-man__name {
+    font-size: 28px;
+    line-height: 120%;
+  }
+
+  .home-man__post {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 50px;
+  }
+
+  .home-man__about {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .home-man__flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .home-man {
+    .home-man__big-img {
+      max-width: 500px;
+    }
+  }
+  // home man end
+
+  // partner
+  .partner {
+    padding-top: 100px;
+  }
+
+  .partner__fon-img {
+    width: 600px;
+  }
+
+  .partner__title {
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 35px;
+  }
+
+  .partner__desc {
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 60px;
+  }
+
+  .partner__list {
+    .partner__img {
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+  }
+
+  .partner__alert {
+    .alert-block {
+      .number {
+        font-size: 40px;
+        line-height: 120%;
+      }
+
+      .desc {
+        font-size: 12px;
+        line-height: 140%;
+      }
+    }
+  }
+  // partner end
+  // product page 
+  .products {
+    padding: 150px 0 0;
+    .product-slider{
+      padding: 10px 0 0;
+      .owl-carousel {
+        .item {
+          .slider-content:hover .hidden-block{
+            transform: scale(.6) translateY(-42px);
+            }
+            .slider-content:hover h2 {
+                transform: translateY(-85px);
+                font-size: 33px;
+              }
+              .slider-content {
+                  .hidden-text {
+                    display: none;
+                  }
+              }
+        }
+      }
+    }
+  }
+  
+}

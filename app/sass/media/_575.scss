@@ -1,0 +1,237 @@
+@media screen and (max-width: 575px) {
+  // main modal
+  .main-modal__body {
+    .modal-desc__text {
+      flex-direction: column;
+    }
+
+    .modal-form {
+      .modal-submit {
+        width: 100%;
+      }
+    }
+  }
+  // main modal end
+
+  // first block
+  .home__first {
+    .first__title {
+      .word-wrapp {
+        height: 22px;
+        transform: translateY(5px);
+      }
+    }
+
+    .first__wrapper {
+      .first__title {
+        font-size: 22px;
+        line-height: 26px;
+      }
+    }
+
+    .first__buttons {
+      margin-top: 35px;
+
+      &:last-child {
+        margin-top: 0;
+      }
+
+      .first__button {
+        padding: 9px 15px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 12px;
+      }
+    }
+  }
+  // first block end
+
+  // preluder
+  .prelouder {
+    .prelouder-logo {
+      width: 222px;
+      height: 71px;
+    }
+  }
+  // preluder end
+
+  // home man
+  .home-man__about {
+    min-width: 100%;
+  }
+  // home man end
+
+   // CONTACTS PAGE
+   .contacts {
+    .contacts-title {
+      h1 {
+        font-size: 40px;
+        line-height: 45px;
+      }
+    }
+    .content-row {
+      .contacts-content {
+        padding-left: 0px; 
+      }
+    }
+  }
+  
+  // end CONTACTS PAGE
+  // about page
+  .about {
+    padding-top: 150px;
+    .about-title {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
+  .about_company {
+    padding: 50px 0;
+    .about_company_info {
+      padding-bottom: 100px;
+      p {
+        font-size: 14px;
+        text-align: justify;
+      }
+    }
+    .company__right {
+      .alert-block {
+        display: none;
+      }
+    }
+  }
+  .principles {
+    .principles-title {
+      h3 {
+        font-size: 34px;
+        line-height: 44px;
+        text-align: center;
+      }
+    }
+    .about__video {
+      width: 270px;
+      height: 270px;
+    }
+  }
+  // about page end
+  // servis page
+  .servis {
+    .servis-content {
+      h1 {
+        font-size: 42px;
+        line-height: 47px;
+        text-align: center;
+      }
+      p {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: justify;
+      }
+      .servis__numbers {
+        .servis__number {
+          font-size: 50px;
+        }
+        .servis__desc {
+          font-size: 17px;
+           line-height: 13px;
+           padding-left: 6px;
+        }
+      }  
+    }
+  }
+  .our_servis{
+    
+    .our_servis--text {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 16px;
+        padding: 15px 0;
+      }
+    }
+    .our_servis--text2{
+      .small-desc {
+        
+      }
+    }
+  }
+  .servis .servis-content .servis__numbers .servis__desc {
+    padding-top: 32px;
+    font-size: 15px;
+  }
+  .servis .servis-content .servis__numbers .second-block {
+    padding-left: 40px;
+  }
+  // servis page end
+  // page products
+  .products {
+    .products-title {
+      h1 {
+        font-size: 27px;
+        margin-bottom: 0;
+      }
+    }
+    .product_back_btn {
+      left: 20px;
+      //top: -40px;
+    }
+    .product-slider .owl-carousel .item .slider-content h2 {
+      font-size: 29px;
+    }
+  }
+  // page products end
+   // single-product-page
+   .product-page {
+        .product-title {
+          h1 {
+            font-size: 32px;
+            line-height: 43px;
+          }
+        }
+        .product-desc {
+          text-align: center;
+          h2 {
+            font-size: 42px;
+            line-height: 58px;
+          }
+          p {
+            text-align: justify;
+            font-size: 17px;
+          }
+          #accordeon {
+            .head {
+              font-size: 13px;
+            }
+          }
+        }
+      .product-overlay {
+         
+          .product-content {
+           
+            .desc {
+              .desc-title {
+                justify-content: center;
+                h3 {
+                  font-size: 14px;
+                }
+              }
+            }
+          .img-block {
+            .barrel {
+              margin: 0 auto;
+              width: 210px;
+              height: 100%;
+              .bar-product {
+                width: 65px;
+                height: 65px;
+              }
+            }
+          }
+        }
+      }
+    
+  }
+  // single-product-page end
+}
