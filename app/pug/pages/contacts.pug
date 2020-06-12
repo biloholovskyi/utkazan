@@ -4,94 +4,40 @@ block variables
   - const pageTitle = 'Контакти'
 
 block content
-    include ../modules/header-white
-    include ../modules/prelouder
-    include ../modules/mobile-modal
-    include ../modules/main-modal 
-
+  include ../modules/header-white
+  include ../modules/prelouder
+  include ../modules/mobile-modal
+  include ../modules/main-modal 
+  .contacts-wrap
     section.contacts
-        .m-container
-            .m-row
-                .m-col.m-col--10
-                    .contacts-title
-                        h1 Контактная информация
-            .m-row.content-row
-                .m-col.m-col--4.m-col-sm--5.m-col-xs--10
-                    .contacts-content
-                        .contacts-item
-                            h3 Адрес:
-                            p 352916, Краснодарский кр., г. Армавир,#[br]тер. Северная Промзона, литера Ж.#[br]352916
-                .m-col.m-col--3.m-col-sm--5.m-col-xs--10 
-                    .contacts-content
-                        .contacts-item
-                            h3 Телефон/факс: 
-                            p  3-15-27, 8 (86137) 4-92-47 
-                            p  3-15-27, 8 (86137) 4-92-47 
-                .m-col.m-col--3.m-col-sm--5.m-col-xs--10
-                    .contacts-content
-                        .contacts-item
-                            h3  Email:
-                            a(href="mailto:hello@defotec.ru") hello@defotec.ru   
-
-            .m-row
-                .m-col.m-col--3.m-col-sm--5.m-col-xs--10.col-team
-                    .contacts-team
-                        .photo
-                            img(src="./media/image/team.svg", alt="photo")
-                            
-                        .name 
-                            p Попов Андрей Владимирович
-                            p Инженер
-                        .contact-info
-                            p Контактная информация:
-                            a(href="tel:+7 910-342-43-46") +7 910-342-43-46
-                            a(href="mailto:teh@defotec.ru") teh@defotec.ru
-
-                .m-col.m-col--3.m-col-sm--5.m-col-xs--10.col-team
-                    .contacts-team
-                        .photo
-                            img(src="./media/image/team.svg", alt="photo")
-                            
-                        .name 
-                            p Попов Андрей Владимирович
-                            p Инженер
-                        .contact-info
-                            p Контактная информация:
-                            a(href="tel:+7 910-342-43-46") +7 910-342-43-46
-                            a(href="mailto:teh@defotec.ru") teh@defotec.ru
-
-                .m-col.m-col--3.m-col-sm--5.m-col-xs--10.col-team
-                    .contacts-team
-                        .photo
-                            img(src="./media/image/team.svg", alt="photo")
-                            
-                        .name 
-                            p Милевский Станислав Александрович
-                            p Инженер
-                        .contact-info
-                            p Контактная информация:
-                            a(href="tel:+7 910-342-43-46") +7 910-342-43-46
-                            a(href="mailto:teh@defotec.ru") teh@defotec.ru
-
-                .m-col.m-col--3.m-col-sm--5.m-col-xs--10.col-team
-                    .contacts-team
-                        .photo
-                            img(src="./media/image/team.svg", alt="photo")
-                        .name 
-                            p Попов Андрей Владимирович
-                            p Руководитель сервисного обслуживания
-                        .contact-info
-                            p Контактная информация:
-                            a(href="tel:+7 910-342-43-46") +7 910-342-43-46
-                            a(href="mailto:teh@defotec.ru") teh@defotec.ru                
-
+      .m-container
+        .m-row
+          .m-col.m-col--15
+            .contacts-title
+              h1 Контактная информация
+        .m-row.content-row
+          .m-col.m-col--4.m-col-sm--5.m-col-xs--10
+            .contacts-content
+              .contacts-item
+                h3 Адрес:
+                p 352916, Краснодарский кр., г. Армавир,#[br]тер. Северная Промзона, литера Ж.#[br]352916
+          .m-col.m-col--3.m-col-sm--5.m-col-xs--10 
+            .contacts-content
+              .contacts-item
+                h3 Телефон/факс: 
+                p  3-15-27, 8 (86137) 4-92-47 
+                p  3-15-27, 8 (86137) 4-92-47 
+          .m-col.m-col--3.m-col-sm--5.m-col-xs--10
+            .contacts-content
+              .contacts-item
+                h3  Email:
+                a(href="mailto:hello@defotec.ru") hello@defotec.ru         
     section.maps    
-        .m-container    
-            .m-row
-                .m-col.m-col--10
-                    .contacts-map
-                        script(src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript")
-                        .contact-page__map#map
-                                                    
-                
-                          
+      .m-container    
+        .m-row
+          .m-col.m-col--10
+            .contacts-map
+              script(src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript")
+              .contact-page__map#map
+
+

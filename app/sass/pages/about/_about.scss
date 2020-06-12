@@ -1,310 +1,337 @@
 .about {
+  width: 100%;
+  height: 1080px;
+  background: #3586DC;
+  padding-top: 265px;
+  position: relative;
+
+  .about-title {
+    h2 {
+      font-family: Bank Sans EF CY;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 56px;
+      line-height: 67px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 25px;
+      color: #FFFFFF;
+      margin-bottom: 135px;
+    }
+  }
+
+  .about__company__numbers {
+    .about__company__number {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 90px;
+      line-height: 108px;
+      letter-spacing: -.1em;
+      color: #fff;
+      position: relative;
+    }
+
+    .about__company__number:after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -12.5px;
+      left: -12.5px;
+      background-image: url(../media/icon/border.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .about__company__desc {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      color: #fff;
+      margin-bottom: 80px;
+    }
+  }
+
+  .photo-team {
     width: 100%;
-    height: 1080px;
-    background: #3586DC;
-    padding-top: 265px;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
+
+.about_company {
+  width: 100%;
+  padding-top: 468px;
+  background-color: #fff;
+
+  .about_company_info {
+    p {
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: #2E2D2C;
+      margin-bottom: 95px;
+
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .block-bold {
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 29px;
+      color: #2E2D2C;
+
+    }
+  }
+
+  .company__right {
     position: relative;
+    height: 100%;
 
-    .about-title {
-        h2 {
-            font-family: Bank Sans EF CY;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 56px;
-            line-height: 67px;
-            letter-spacing: -0.02em;
-            color: #FFFFFF;
-            margin-bottom: 25px;
-        }
-        p {
-            font-family: Proxima Nova;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 17px;
-            line-height: 25px;
-            color: #FFFFFF;
-            margin-bottom: 135px;
-        }
+    .alert-block {
+      position: absolute;
+      bottom: 0;
     }
 
-    .about__company__numbers {
-        .about__company__number {
-            font-family: 'Bank Sans EF CY',sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 90px;
-            line-height: 108px;
-            letter-spacing: -.1em;
-            color: #fff;
-            position: relative;
-        }
-        .about__company__number:after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            top: -12.5px;
-            left: -12.5px;
-            background-image: url(../media/icon/border.svg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .about__company__desc {
-            font-family: 'Proxima Nova',sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 22px;
-            color: #fff;
-            margin-bottom: 80px;
-        }
-    }
-    .photo-team {
-        width: 100%;
-        height: 100%;
-        img {
-            width: 100%;
-            height: 100%;
-            object-position: center;
-            object-fit: cover;
-        }
-    }
-}
-.about_company{
-    width: 100%;
-    padding-top: 468px;
-    background-color: #fff;
-    .about_company_info {
-        p {
-            font-family: Proxima Nova;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 23px;
-            color: #2E2D2C;
-            margin-bottom: 95px;
-            max-width: 625px;
-            span {
-                text-transform: uppercase;
-                font-weight: bold;
-            } 
-        }
-        .block-bold {
-            font-family: Proxima Nova;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 29px;
-            color: #2E2D2C;
-            max-width: 595px;
-        }
-    }
-    .company__right { 
+    .company__numbers {
+      .company__number {
+        font-family: 'Bank Sans EF CY', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 90px;
+        line-height: 108px;
+        letter-spacing: -.1em;
+        color: #F97C36;
         position: relative;
-        height: 100%;
-        .alert-block {
-            position: absolute;
-            bottom: 0;
-        }
-        .company__numbers{
-            .company__number {
-                font-family: 'Bank Sans EF CY',sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 90px;
-                line-height: 108px;
-                letter-spacing: -.1em;
-                color: #F97C36;
-                position: relative;
-            }
-            .company__number:after {
-                content: '';
-                position: absolute;
-                width: 25px;
-                height: 25px;
-                top: -12.5px;
-                left: -12.5px;
-                background-image: url(../media/icon/border.svg);
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-            }
-            .company__desc {
-                font-family: 'Proxima Nova',sans-serif;
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 22px;
-                color: #2E2D2C;
-                margin-bottom: 80px;
-            }
-        }
-    }
-}
-.principles{
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 186px;
-    background: #F9F9F9;
-    .principles-title {
-        max-width: 536px;
-        h3 {
-            font-family: Bank Sans EF CY;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 48px;
-            line-height: 58px;
-            letter-spacing: -0.03em;
-            color: #2E2D2C;
-            margin-bottom: 50px;
-        }
-    }
-    .principles-list {
-        ul {
-            li {
-                margin-bottom: 50px;
-                list-style-type: none;
-                h4 {
-                    font-family: Proxima Nova;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 29px;
-                    color: #2E2D2C;
-                    margin-bottom: 15px;
-                }
-                p {
-                    font-family: Proxima Nova;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 23px;
-                    color: #2E2D2C;
-                    padding-left: 10px;
-                }
-            }
+      }
 
-            li h4:before {
-                content: "";
-                width: 12px;
-                height: 12px;
-                background-color: #F97C36;
-                display: inline-block;
-                margin-right: 8px;
-                border-radius: 50%;
-            }
-        }
-    }
-    .about__video {
-        width: 350px;
-        height: 350px;
+      .company__number:after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -12.5px;
+        left: -12.5px;
+        background-image: url(../media/icon/border.svg);
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        position: relative;
-        cursor: pointer;
-        display: -webkit-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
-    
-        .about__video-bg {
-            position: absolute;
-            background-image: url(../media/image/white_mask_video.png);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 2;
-            opacity: 1;
-        }
-        .about__video-close {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            width: 25px;
-            height: 25px;
-            background-image: url(../media/icon/close.svg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            cursor: pointer;
-            z-index: 9999999999999;
-            display: none;
-        }
-        .about__videoblock {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        .video__play {
-            background-image: url(../media/icon/play.svg);
-            width: 43.88px;
-            height: 43.88px;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            top: 50%;
-            left: 50%;
-            margin-top: -21.94px;
-            margin-left: -21.94px;
-            position: absolute;
+      }
 
-        }
-        .video__time {
-            font-family: 'Proxima Nova',sans-serif;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 22px;
-            text-align: center;
-            color: #fff;
-            margin-top: 93.88px;
-            position: relative;
-            z-index: 20;
-        }
-        
+      .company__desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        color: #2E2D2C;
+        margin-bottom: 80px;
+      }
     }
+  }
+}
 
-    .about__video--show {
-        position: fixed !important;
-        width: 100% !important;
-        height: 100% !important;
-        top: 0;
-        left: 0;
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        z-index: 9;
-        margin: 0 !important
+.principles {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 186px;
+  background: #F9F9F9;
+
+  .principles-title {
+    max-width: 536px;
+
+    h3 {
+      font-family: Bank Sans EF CY;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.03em;
+      color: #2E2D2C;
+      margin-bottom: 50px;
     }
-    
-    .about__video--show .about__video-close {
-        display: block
-    }
-    .principles__right {
+  }
+
+  .principles-list {
+    ul {
+      li {
+        margin-bottom: 50px;
+        list-style-type: none;
+
+        h4 {
+          font-family: Proxima Nova;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 29px;
+          color: #2E2D2C;
+          margin-bottom: 15px;
+        }
+
         p {
-            font-family: Proxima Nova;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 23px;
-            color: #2E2D2C;
-            span {
-                font-weight: bold;
-            }
+          font-family: Proxima Nova;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 23px;
+          color: #2E2D2C;
+          padding-left: 10px;
         }
+      }
+
+      li h4:before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-color: #F97C36;
+        display: inline-block;
+        margin-right: 8px;
+        border-radius: 50%;
+      }
     }
+  }
+
+  .about__video {
+    width: 100%;
+    height: 100%;
+    max-height: 560px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    .about__video-bg {
+      position: absolute;
+      background-image: url(../media/image/white_mask_video.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      opacity: 1;
+    }
+
+    .about__video-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 25px;
+      height: 25px;
+      background-image: url(../media/icon/close.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      z-index: 9999999999999;
+      display: none;
+    }
+
+    .about__videoblock {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .video__play {
+      background-image: url(../media/icon/play.svg);
+      width: 43.88px;
+      height: 43.88px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 50%;
+      left: 50%;
+      margin-top: -21.94px;
+      margin-left: -21.94px;
+      position: absolute;
+
+    }
+
+    .video__time {
+      font-family: 'Proxima Nova', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: center;
+      color: #fff;
+      margin-top: 93.88px;
+      position: relative;
+      z-index: 20;
+    }
+
+  }
+
+  .about__video--show {
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 9;
+    margin: 0 !important
+  }
+
+  .about__video--show .about__video-close {
+    display: block
+  }
+
+  .principles__right {
+    p {
+      font-family: Proxima Nova;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 23px;
+      color: #2E2D2C;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
 
 }
