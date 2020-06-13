@@ -218,15 +218,14 @@
                 }
               }
             }
+        
+        }
+        .product-img {
           .img-block {
             .barrel {
               margin: 0 auto;
               width: 210px;
               height: 100%;
-              .bar-product {
-                width: 65px;
-                height: 65px;
-              }
             }
           }
         }
@@ -234,4 +233,13 @@
     
   }
   // single-product-page end
+  .products .product-slider .item .slider-content h2 {
+    font-size: 29px;
+    }
+    .product-page .single-page-container .product-content .desc {
+      text-align: left;
+    }
+    .products .products-title {
+      padding-top: 27px;
+  }
 }

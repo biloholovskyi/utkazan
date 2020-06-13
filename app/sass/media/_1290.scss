@@ -327,4 +327,14 @@
     
   }
   // single-product-page end
+  
+  // products
+  .products {
+    .product-slider {
+      .item {
+        max-width: calc(100% / 2 - 24px);
+      }
+    }
+  }
+  // products end
 }

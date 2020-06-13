@@ -302,7 +302,7 @@
   .product-page {
     .single-page-container{
      
-      .product-overlay {
+     
          
           .product-content {
             flex-direction: column;
@@ -320,9 +320,18 @@
            padding-left: 0;
           }
         }
-      }
+      
     }
   }
+    // products
+    .products {
+      .product-slider {
+        .item {
+          max-width: calc(100%);
+        }
+      }
+    }
+    // products end
   // single-product-page end
     .contacts {
         .col-team {

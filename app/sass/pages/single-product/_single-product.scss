@@ -3,6 +3,7 @@
   background-color: #F9F9F9;
   position: relative;
   overflow-x: hidden;
+  padding-bottom: 50px;
 
   .product_back_btn {
     font-family: Proxima Nova;
@@ -120,18 +121,9 @@
       letter-spacing: -0.02em;
       color: #3C3C3B;
     }
-  }
-
-  .product-overlay {
-    width: 2000px;
-    height: 737px;
-    background-color: #fff;
-    position: relative;
-
     .product-content {
       display: flex;
-      padding-left: 70px;
-      padding-top: 93px;
+      padding-bottom: 50px;
 
       .desc {
 
@@ -259,8 +251,27 @@
 
       }
 
+   
+    }
+  }
+
+  .product-overlay {
+    width: 2000px;
+    height: 737px;
+    // background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .product-img {
+      display: flex;
+      // padding-left: 70px;
+      padding-top: 93px;
+
+   
       .img-block {
-        padding-left: 125px;
+        // padding-left: 125px;
 
         .barrel {
           margin-bottom: 24px;
