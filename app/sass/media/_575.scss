@@ -30,7 +30,7 @@
     }
 
     .first__buttons {
-      margin-top: 35px;
+      // margin-top: 35px;
 
       &:last-child {
         margin-top: 0;
@@ -241,5 +241,14 @@
     }
     .products .products-title {
       padding-top: 27px;
+  }
+  #first-slider {
+    margin-bottom: 50px;
+    .item {
+      p {
+      font-size: 14px;
+      line-height: 20px;
+      }
+    }
   }
 }
