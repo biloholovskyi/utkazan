@@ -1,0 +1,17 @@
+@media screen and (max-width: 575px) {
+  // home about
+  .home__about {
+    .about__video {
+      width: 270px;
+      height: 270px;
+
+      .video__poster {
+        width: 250px;
+        height: 250px;
+        margin-left: -125px;
+        margin-top: -125px;
+      }
+    }
+  }
+  // home about end
+}

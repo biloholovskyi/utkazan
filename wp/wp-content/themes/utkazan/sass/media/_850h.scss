@@ -1,0 +1,61 @@
+@media screen and (max-height: 850px) {
+  .map__big-text {
+    .alert-block {
+      display: none;
+    }
+  }
+
+  .home-man__about {
+    margin-bottom: 50px;
+  }
+
+  .home__about {
+    .m-container {
+      padding-top: 0;
+    }
+  }
+   // product page 
+   .products {
+    .products-title h1 {
+      
+    }
+    .product-slider{
+      .owl-carousel {
+        .item {
+          .slider-content:hover .hidden-block{
+            transform: scale(0.8) translateY(-36px);
+            }
+            .slider-content:hover h2 {
+               
+                transform: translateY(-55px);
+                font-size: 36px;
+                line-height: 31px;
+              }
+              .slider-content:hover .hidden-text {
+                transform: translateY(-62px);
+                font-size: 27px;
+              }
+            
+        }
+      }
+    }
+  }
+  // servis page
+  .servis {
+    .servis-content {
+      h1 {
+        margin-bottom: 30px;
+        font-size: 54px;
+      }
+
+      p {
+        margin-bottom: 30px;
+        font-size: 17px;
+      }
+
+      .servis__numbers {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

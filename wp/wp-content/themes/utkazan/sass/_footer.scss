@@ -1,0 +1,38 @@
+.footer {
+    background: #323232;
+    width: 100%;
+    padding: 80px 60px 30px;
+    display: flex;
+    flex-direction: column;
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 159px;
+    }
+
+    .footer-doc {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            color: #656565;
+        }
+
+        a {
+            font-family: Proxima Nova;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            text-decoration-line: underline;
+            color: #656565;
+        }
+    }
+}

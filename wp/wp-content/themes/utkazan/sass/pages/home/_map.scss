@@ -1,0 +1,122 @@
+.map {
+  background: #3586DC;
+
+  &__container {
+    height: 100%;
+  }
+
+  &__row {
+    height: 100%;
+  }
+
+  &__img-wrapp {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    object-position: center;
+    object-fit: contain;
+  }
+
+  &__text-wrapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-top: -100px;
+  }
+
+  .text__logo {
+    width: 157px;
+    height: 35px;
+    display: block;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .small-text__desc {
+    max-width: 242px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-top: 15px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__big-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    .big__title {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 45px;
+    }
+
+    .big__text {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 25px;
+      color: #FFFFFF;
+      margin-bottom: 45px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .big__link {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 25px;
+      color: #FFFFFF;
+      position: relative;
+      width: max-content;
+
+      &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-image: url(../media/icon/arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 50%;
+        margin-top: -6px;
+        right: -17px;
+      }
+    }
+
+    .alert-block {
+      width: 100%;
+      right: auto;
+      left: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}

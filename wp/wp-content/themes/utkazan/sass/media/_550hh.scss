@@ -1,0 +1,29 @@
+@media screen and (max-height: 550px) {
+
+    // product page 
+    .products {
+       
+        .product-slider{
+            h1 {
+                font-size: 30px;
+            }
+        .owl-carousel {
+            .item {
+            .slider-content:hover .hidden-block{
+                transform: scale(.6) translateY(-112px);
+                }
+                .slider-content:hover h2 {
+                    transform: translateY(-128px);
+                    font-size: 33px;
+                }
+                    .slider-content {
+                        padding-top: 0;
+                        .hidden-text {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}    

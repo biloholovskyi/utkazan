@@ -37,7 +37,7 @@ gulp.task('pug', function () {
 gulp.task('default', function() {
   browserSync.init({
         server: {
-            baseDir: "./app"
+            baseDir: "./wp/wp-content/themes/utkazan"
         }
     });
     gulp.watch("app/pug/**/*.pug", function () {
@@ -48,8 +48,8 @@ gulp.task('default', function() {
             .pipe(gulp.dest('app/'))
             .pipe(browserSync.reload({stream: true}));
     });
-    gulp.watch("app/sass/**/*.scss", function () {
-        return gulp.src("app/sass/**/*.scss")
+    gulp.watch("wp/wp-content/themes/utkazan/sass/**/*.scss", function () {
+        return gulp.src("wp/wp-content/themes/utkazan/sass/**/*.scss")
           .pipe(sass())
           .pipe(autoprefixer({
             overrideBrowserslist: ['> 0.1%'],
@@ -58,13 +58,13 @@ gulp.task('default', function() {
           .pipe(cleanCSS({
             level: 2
           }))
-          .pipe(gulp.dest("app/css"))
+          .pipe(gulp.dest("wp/wp-content/themes/utkazan/css"))
           .pipe(browserSync.stream());
     });
-    gulp.watch("app/js/**/*.js", function () {
-      return gulp.src("app/js/index.js")
+    gulp.watch("wp/wp-content/themes/utkazan/js/**/*.js", function () {
+      return gulp.src("wp/wp-content/themes/utkazan/js/index.js")
         .pipe(webpack(webConfig))
-        .pipe(gulp.dest("app/buildjs"))
+        .pipe(gulp.dest("wp/wp-content/themes/utkazan/buildjs"))
         .pipe(browserSync.stream());
     });
 });

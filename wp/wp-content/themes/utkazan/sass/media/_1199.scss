@@ -1,0 +1,32 @@
+@media screen and (max-width: 1199px) {
+    .footer {
+        .footer__nav {
+            .header__nav {
+                .nav__link {
+                    font-size: 18px;
+                }
+            }
+
+            
+        }
+    }
+    // page product
+    .opacity-block,
+    .opacity-block2 {
+        display: none;
+    }
+    // page products
+  .products {
+    .products-title {
+      h1 {
+        
+        margin-bottom: 0;
+      }
+    }
+    
+    .product-slider  {
+        
+    }
+  }
+  // page products end
+}

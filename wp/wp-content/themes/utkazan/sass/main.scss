@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*settings*/
+@import "fonts";
+@import "var";
+@import "fullpage/fullpage";
+@import "fullpage/fullpageNav";
+@import "grid/main-grid"; 
+@import "particle";
+@import "modules/prelouder";
+@import "modules/mobile-modal";
+@import "modules/main-modal";
+@import "modules/product-anim";
+
+/*over use blocks*/
+@import "header";
+@import "header-white";
+@import "footer";
+
+/*pages*/
+// home
+@import "pages/home/anim-block";
+@import "pages/home/first";
+@import "pages/home/about";
+@import "pages/home/industry"; 
+@import "pages/home/map";
+@import "pages/home/fon-video";
+@import "pages/home/home-man";
+@import "pages/home/partner";
+/*pages*/
+// single-page product
+@import "pages/single-product/single-product";
+/*pages*/
+// page products
+@import "pages/page-product/product";
+/*pages*/
+// servis
+@import "pages/servis/servis";
+@import "pages/servis/servis-slider";
+/*pages*/
+// contacts
+@import "pages/contacts/contacts";
+@import "pages/contacts/map";
+/*pages*/
+// contacts
+@import "pages/about/about";
+
+
+/*media*/
+@import "media/920h";
+@import "media/850h";
+@import "media/1750";
+@import "media/1650";
+@import "media/1350";
+@import "media/1290";
+@import "media/1020";
+@import "media/1199";
+@import "media/710h";
+@import "media/660h";
+@import "media/550h";
+@import "media/550hh";
+@import "media/991";
+@import "media/767";
+@import "media/575";
+@import "media/540h";
+@import "media/370";

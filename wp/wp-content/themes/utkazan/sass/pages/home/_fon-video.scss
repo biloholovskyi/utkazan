@@ -1,0 +1,93 @@
+.fon-video {
+  background: #3586DC;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    background: linear-gradient(222.75deg, rgba(82, 157, 227, 0) -35.37%, rgba(23, 117, 204, 0.76) 66.63%, #1775CC 87.8%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1 !important;
+  }
+
+  * {
+    z-index: 20;
+  }
+
+  .fon-video__info {
+    max-width: 575px;
+    width: 100%;
+    margin-right: 347px;
+
+    .fon-video__title {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 58px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      margin-bottom: 40px;
+    }
+
+    .fon-video__text {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF;
+      margin-bottom: 50px;
+      max-width: 487px;
+    }
+
+    .fon-video__number {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    .fon-video__logo {
+      object-position: center;
+      object-fit: contain;
+      width: 200px;
+      min-width: 200px;
+      height: 200px;
+      margin-right: 17px;
+    }
+
+    .fon-video__logo-text {
+      font-family: 'Bank Sans EF CY', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 43px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+    }
+  }
+}
