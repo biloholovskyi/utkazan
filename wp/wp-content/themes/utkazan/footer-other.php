@@ -7,7 +7,7 @@
         <button class="header__button main-modal-show">Связаться</button>
       </div>
       <div class="footer-doc">
-        <p>© Официальный сайт компании “”<br> Все права защищены.</p><a href="<?php the_field('politics'); ?>" target="_blank"> Политика конфиденциальности</a>
+        <p>© Официальный сайт компании <br> Все права защищены.</p><a href="<?php the_field('politics'); ?>" target="_blank"> Политика конфиденциальности</a>
       </div>
     </footer>
     <div class="alert-modal">

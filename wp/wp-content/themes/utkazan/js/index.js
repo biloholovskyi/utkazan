@@ -4,7 +4,7 @@ import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
-// import {play, close} from "./aboutVideo";
+import {play, close} from "./aboutVideo";
 import './accordion';
 import './owl.carousel.min';
 import './productSlider';

@@ -44,7 +44,7 @@ var myPin = new ymaps.Placemark([44.997884, 41.063663],
   {
     iconLayout: 'default#image',
     
-    iconImageHref: './media/icon/pin.png',
+    iconImageHref: '<?php echo get_template_directory_uri(); ?>/media/icon/pin.png',
     iconImageSize: [37.6, 37.6],
     iconImageOffset: [0, 0]
   });

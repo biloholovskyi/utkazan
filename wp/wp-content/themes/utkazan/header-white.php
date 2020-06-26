@@ -17,9 +17,9 @@
         <div class="humb-item"></div>
       </div><a class="header__logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/media/icon/newPre.png"></a>
       <div class="header__nav">
-        <a class="nav__link" href="/catalog">Продукция</a>
-        <a class="nav__link" href="/about">О компании</a>
-        <a class="nav__link" href="/contacts">Контакты</a></div>
+        <a class="nav__link" href="./catalog">Продукция</a>
+        <a class="nav__link" href="./about">О компании</a>
+        <a class="nav__link" href="./contacts">Контакты</a></div>
       <button class="header__button main-modal-show">Связаться</button>
       <button class="header__mobile main-modal-show"></button>
     </header>
@@ -29,8 +29,8 @@
     </div>
     <div class="mobile-modal">
       <div class="mobile-modal__links">
-        <a class="mobile-modal__link" href="#">Продукция</a>
-        <a class="mobile-modal__link" href="#">О компании</a>
+        <a class="mobile-modal__link" href="./catalog">Продукция</a>
+        <a class="mobile-modal__link" href="./about">О компании</a>
         <a class="mobile-modal__link" href="./contacts">Контакты</a></div>
       <div class="mobile-modal__button main-modal-show">Связаться</div>
     </div>

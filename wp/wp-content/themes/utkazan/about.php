@@ -78,10 +78,12 @@ Template Name: about
           <div class="m-col m-col--4 m-col-lg--4 m-col-md--10">
             <div class="about__video">
               <div class="about__video-bg"></div>
-             
+              <div class="about__video-close"></div>
               <?php $images = get_field('images2'); ?>
-              <!-- <video class="about__videoblock" id="about-video" src="./media/video/about.mp4" playsinline muted autoplay loop preload="" controls></video> -->
-              <img src="<?php echo $images; ?>" alt="image">
+              <video class="about__videoblock" id="about-video" src="<?php echo get_template_directory_uri(); ?>/media/video/about.mp4" playsinline muted autoplay loop preload="" controls></video>
+              <!-- <img src="<?php echo $images; ?>" alt="image"> -->
+              <div class="video__play"></div>
+              <div class="video__time">4:01</div>
             </div>
             <!-- <div class="principles__right">
               <p>“Дефотек” сегодня - это точный, отлаженный как швейцарские часы механизм. Здесь старательно выполняют свою работу службы логистики, маркетинга, контроля качества и доставки.<br><br> <span>На протяжении многих лет компания остается крупнейшим поставщиком различной химии для сахарной промышленности.</span>    </p>
