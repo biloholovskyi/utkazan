@@ -48,7 +48,7 @@ Template Name: Home
                     ?>
                 </div>
                 <div class="first__buttons">
-                  <button class="first__button">Подробнее</button>
+                  <button onClick="location.href='./catalog';" class="first__button">Подробнее</button>
                 </div>
                 <button class="first__button-down" data-number="2"></button>
               </div>

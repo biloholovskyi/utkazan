@@ -78,7 +78,7 @@ Template Name: about
           <div class="m-col m-col--4 m-col-lg--4 m-col-md--10">
             <div class="about__video">
               <div class="about__video-bg"></div>
-              <div class="about__video-close"></div>
+             
               <?php $images = get_field('images2'); ?>
               <!-- <video class="about__videoblock" id="about-video" src="./media/video/about.mp4" playsinline muted autoplay loop preload="" controls></video> -->
               <img src="<?php echo $images; ?>" alt="image">
