@@ -12,7 +12,9 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 button {
   cursor: pointer;
 }

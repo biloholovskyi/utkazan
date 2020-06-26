@@ -1,6 +1,6 @@
 import 'normalize.css';
 import {fullPageNav, fullPageStart, numberRoll, mobileScroll, switchScroll, stopScroll} from "./fullpageNav";
-import './particles';
+import './particles'; 
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
@@ -19,13 +19,13 @@ $(document).ready(function() {
   changeWord();
   overlaySize();
  
-  if($('.anim-number').length > 0) {
+  if($('.anim-number').length > 0) { 
     setTimeout(() => {
       numberRoll();
     }, 2000)
   }
 
-  if($('#particle').length > 0) {
+  if($('#particle').length > 0) { 
     particlesJS.load('particle', 'particles.json', function() {});
   }
   if($('#particle-2').length > 0) {
@@ -81,6 +81,10 @@ $(document).ready(function() {
         top = $(id).offset().top;
     $('html,body').animate({scrollTop: top}, 800);
   }));
+
+
+
+
 });
 
 
@@ -88,3 +92,4 @@ $(document).ready(function() {
 $(window).resize(function () {
   overlaySize();
 });
+

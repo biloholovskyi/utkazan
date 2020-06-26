@@ -1,3 +1,9 @@
+<div class="alert-modal">
+  <div class="alert-modal__body">
+    <p>Спасибо!</p>
+    <p>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время</p>
+  </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
     <script>$(document).ready(function () {

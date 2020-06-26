@@ -10,13 +10,13 @@ Template Name: about
           <div class="m-col m-col--4 m-col-md--5 m-col-xs--10"> 
             <div class="about-title"> 
               <h2>О компании</h2>
-              <p><?php the_field('company_desc') ?></p>
+              <p><?php the_field('company_desc'); ?></p>
             </div>
           </div>
           <div class="m-col m-col--3 m-col-md--1 m-col-xs--10"> </div>
           <div class="m-col m-col--3 m-col-md--4 m-col-xs--10">
             <div class="about__company__numbers">
-              <div class="about__company__number anim-number"><?php the_field('year_company') ?></div>
+              <div class="about__company__number anim-number"><?php the_field('year_company'); ?></div>
               <div class="about__company__desc">год основания компании </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ Template Name: about
         <div class="m-row">
           <div class="m-col m-col--15">
             <div class="about_company_info">
-              <p><?php the_field('company_text') ?></p> 
+              <p><?php the_field('company_text'); ?></p> 
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ Template Name: about
                   ?>
                 <li>
                   <h4><?php the_title(); ?></h4>
-                  <p><?php the_field('principles_desc') ?></p>
+                  <p><?php the_field('principles_desc'); ?></p>
                 </li>
                 <?php
                   }

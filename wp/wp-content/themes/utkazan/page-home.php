@@ -61,8 +61,8 @@ Template Name: Home
         <div class="m-container">
           <div class="m-row">
             <div class="m-col m-col--7 m-col-sm--10">
-              <h2 class="about__title"><?php the_field('second_title') ?></h2>
-              <p class="about__text"><?php the_field('second_text') ?></p><a class="about__link" href="./about">О компании</a>
+              <h2 class="about__title"><?php the_field('second_title'); ?></h2>
+              <p class="about__text"><?php the_field('second_text'); ?></p><a class="about__link" href="./about">О компании</a>
             </div>
             <div class="m-col m-col--3 m-col-sm--10">
               <div class="about__numbers">
@@ -110,7 +110,7 @@ Template Name: Home
                   ?>
                 <div class="m-col m-col--3 m-col-xs--10 order-1">
                   <div class="industry__text">
-                    <p class="industry__desc"><?php the_field('servis_text') ?></p>
+                    <p class="industry__desc"><?php the_field('servis_text'); ?></p>
                   </div>
                 </div>
                 <?php
@@ -131,8 +131,8 @@ Template Name: Home
           <div class="m-row partner__row">
             <div class="m-col m-col--4 m-col-sm--10">
               <div class="partner__text">
-                <h3 class="partner__title"><?php the_field('geography_title') ?></h3>
-                <div class="partner__desc"><?php the_field('geography_text') ?></div>
+                <h3 class="partner__title"><?php the_field('geography_title'); ?></h3>
+                <div class="partner__desc"><?php the_field('geography_text'); ?></div>
                 <div class="partner__list">
                 <?php
                 $args = array(

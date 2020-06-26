@@ -43,8 +43,8 @@ Template Name: Catalog
           <div class="item"><a href="<?php the_permalink(); ?>">
               <div class="slider-content"><img class="img-elem" src="<?php echo $catalogImg; ?>" alt="icon">
                 <div class="hidden-block"><img class="hidden-img" src="<?php echo $hiddenImg; ?>" alt="image"></div>
-                <h2><?php the_field('catalog_title') ?></h2>
-                <p class="hidden-text"><?php the_field('hidden_text') ?></p>
+                <h2><?php the_field('catalog_title'); ?></h2>
+                <p class="hidden-text"><?php the_field('hidden_text'); ?></p>
               </div></a>
             </div>
             <?php

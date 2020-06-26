@@ -14,7 +14,7 @@
 
     .footer-doc {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
 
         p {
             font-family: Proxima Nova;
@@ -36,3 +36,30 @@
         }
     }
 }
+
+.alert-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 60
+  }
+  
+  .alert-modal__body {
+    background-color: #fff;
+    max-width: 80%;
+    border-radius: 15px;
+    padding: 15px
+  }
+  
+  .alert-modal__body p {
+    color: #111;
+    font-size: 36px;
+    text-align: center
+  }

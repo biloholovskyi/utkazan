@@ -19,7 +19,7 @@ Template Name: Contacts
               <div class="contacts-content">
                 <div class="contacts-item">
                   <h3>Адрес:</h3>
-                  <p><?php the_field('addres') ?></p>
+                  <p><?php the_field('addres'); ?></p>
                 </div>
               </div>
             </div>
@@ -27,14 +27,14 @@ Template Name: Contacts
               <div class="contacts-content">
                 <div class="contacts-item">
                   <h3>Телефон/факс: </h3>
-                  <p><?php the_field('tel') ?></p>
+                  <p><?php the_field('tel'); ?></p>
                 </div>
               </div>
             </div>
             <div class="m-col m-col--3 m-col-sm--5 m-col-xs--10">
               <div class="contacts-content">
                 <div class="contacts-item">
-                  <h3> Email:</h3><a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
+                  <h3> Email:</h3><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
                 </div>
               </div>
             </div>

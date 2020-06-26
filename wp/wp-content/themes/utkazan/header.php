@@ -15,17 +15,32 @@
         <div class="humb-item"></div>
         <div class="humb-item"></div>
         <div class="humb-item"></div>
-      </div><a class="header__logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/media/icon/white-logo.svg"></a>
-      <div class="header__nav"><a class="nav__link" href="./catalog">Продукция</a><a class="nav__link" href="./servis.html">Сервисная служба</a><a class="nav__link" href="./about">О компании</a><a class="nav__link" href="./contacts">Контакты</a></div>
+      </div><a class="header__logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/media/icon/removebg.png"></a>
+      <div class="header__nav">
+
+        <a class="nav__link" href="./catalog">Продукция</a>
+        <a class="nav__link" href="./about">О компании</a>
+        <a class="nav__link" href="./contacts">Контакты</a>
+      
+      </div>
       <button class="header__button main-modal-show">Связаться</button>
       <button class="header__mobile main-modal-show"></button>
+      <div class="alert-modal">
+      <div class="alert-modal__body">
+        <p>Спасибо!</p>
+        <p>Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время</p>
+      </div>
+  </div>
     </header>
     <div class="prelouder" id="prelouder"><img class="prelouder-logo" src="<?php echo get_template_directory_uri(); ?>/media/icon/newPre.png"></div> 
     <div class="anim-block">
       <div class="anim-block__item"></div>
     </div>
     <div class="mobile-modal">
-      <div class="mobile-modal__links"><a class="mobile-modal__link" href="#">Продукция</a><a class="mobile-modal__link" href="#">Сервисная служба</a><a class="mobile-modal__link" href="#">О компании</a><a class="mobile-modal__link" href="./contacts">Контакты</a></div>
+      <div class="mobile-modal__links">
+        <a class="mobile-modal__link" href="./catalog">Продукция</a>
+        <a class="mobile-modal__link" href="./about">О компании</a>
+        <a class="mobile-modal__link" href="./contacts">Контакты</a></div>
       <div class="mobile-modal__button main-modal-show">Связаться</div>
     </div>
     <div class="main-modal">
@@ -37,8 +52,8 @@
         </div>
         <div class="modal-desc__small-text">Укажите предпочитаемый способ связи</div>
         <form class="modal-form">
-          <input class="modal-input" type="text" name="contact" placeholder="Укажите номер телефона" required>
-          <textarea class="modal-input modal-input--text" name="text" placeholder="Что Вас интересует?"></textarea>
+          <input class="modal-input" id="contact" type="text" name="contact" placeholder="Укажите номер телефона" required>
+          <textarea class="modal-input  modal-input--text" id="text" name="text" placeholder="Что Вас интересует?"></textarea>
           <input class="modal-submit" type="submit" value="Отправить">
         </form>
         <div class="modal-political">
@@ -47,3 +62,4 @@
         </div>
       </div>
     </div>
+   
