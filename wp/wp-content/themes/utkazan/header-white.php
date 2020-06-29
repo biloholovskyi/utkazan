@@ -15,21 +15,28 @@
         <div class="humb-item"></div>
         <div class="humb-item"></div>
         <div class="humb-item"></div>
-      </div><a class="header__logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/media/icon/newPre.png"></a>
+      </div>
+        <a class="header__logo" href="/">
+        <img src="<?php echo get_template_directory_uri(); ?>/media/icon/logo-black.svg">
+          <div class="text-logo">Объединенные<br>Технологии</div>
+      </a>
       <div class="header__nav">
-        <a class="nav__link" href="./catalog">Продукция</a>
+        <a class="nav__link" href="./catalog">Услуги</a>
         <a class="nav__link" href="./about">О компании</a>
         <a class="nav__link" href="./contacts">Контакты</a></div>
       <button class="header__button main-modal-show">Связаться</button>
       <button class="header__mobile main-modal-show"></button>
     </header>
-    <div class="prelouder" id="prelouder"><img class="prelouder-logo" src="<?php echo get_template_directory_uri(); ?>/media/icon/newPre.png"></div>
+    <div class="prelouder" id="prelouder">
+    <img class="prelouder-logo" src="<?php echo get_template_directory_uri(); ?>/media/icon/logo-black.svg">
+          <div class="text-preloader">Объединенные<br>Технологии</div>
+    </div>
     <div class="anim-block">
       <div class="anim-block__item"></div>
     </div>
     <div class="mobile-modal">
       <div class="mobile-modal__links">
-        <a class="mobile-modal__link" href="./catalog">Продукция</a>
+        <a class="mobile-modal__link" href="./catalog">Услуги</a>
         <a class="mobile-modal__link" href="./about">О компании</a>
         <a class="mobile-modal__link" href="./contacts">Контакты</a></div>
       <div class="mobile-modal__button main-modal-show">Связаться</div>

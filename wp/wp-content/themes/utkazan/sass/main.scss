@@ -12,9 +12,7 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-body::-webkit-scrollbar{
-  display: none;
-}
+
 button {
   cursor: pointer;
 }
@@ -52,10 +50,7 @@ button {
 /*pages*/
 // page products
 @import "pages/page-product/product";
-/*pages*/
-// servis
-@import "pages/servis/servis";
-@import "pages/servis/servis-slider";
+
 /*pages*/
 // contacts
 @import "pages/contacts/contacts";

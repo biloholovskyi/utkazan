@@ -28,12 +28,24 @@
   }
 
   &__logo {
+    display: flex; 
+    align-items: center;
+    max-width: 220px;
     img {
       height: 54px;
-      width: 193.95px;
+      width: 48px;
       object-fit: contain;
-      object-position: center;
-      transform: scale(2);
+      object-position: center; 
+      // transform: scale(2);
+    }
+    .text-logo {
+      font-family: 'Bank Sans EF CY',sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: .05em;
+    color: #fff;
+    margin-left: 15px;
     }
   }
 
@@ -88,7 +100,7 @@
       height: 16px;
       margin-right: 5px;
       background-image: url(../media/icon/button-icon.svg);
-      background-position: center;
+      background-position: center; 
       background-size: contain;
       background-repeat: no-repeat;
     }

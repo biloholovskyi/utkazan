@@ -47,9 +47,6 @@ Template Name: Home
                     wp_reset_postdata(); // сброс
                     ?>
                 </div>
-                <div class="first__buttons">
-                  <button onClick="location.href='./catalog';" class="first__button">Подробнее</button>
-                </div>
                 <button class="first__button-down" data-number="2"></button>
               </div>
             </div>
@@ -71,11 +68,11 @@ Template Name: Home
                 $number_block = get_field('number_block');
               ?>
 
-                <div class="about__number anim-number"><?php echo $number_block['number']; ?></div>
+                <div class="about__number"><?php echo $number_block['number']; ?></div>
                 <div class="about__desc"><?php echo $number_block['number_text']; ?></div>
-                <div class="about__number anim-number"><?php echo $number_block['number2']; ?></div>
+                <div class="about__number"><?php echo $number_block['number2']; ?></div>
                 <div class="about__desc"><?php echo $number_block['number_text2']; ?></div>
-                <div class="about__number anim-number"><?php echo $number_block['number3']; ?></div>
+                <div class="about__number"><?php echo $number_block['number3']; ?></div>
                 <div class="about__desc"><?php echo $number_block['number_text3']; ?></div>
               </div>
             </div>

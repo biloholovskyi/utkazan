@@ -1,5 +1,10 @@
 .header-white {
     background-color: #fff;
+    .header__logo {
+        .text-logo {
+            color: #333;
+        }
+    }
     .header__nav {
         .nav__link {
             color: #3C3C3B;

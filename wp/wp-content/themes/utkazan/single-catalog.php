@@ -1,16 +1,16 @@
 <?php get_header('white'); ?>
-    <section class="product-page"> <a class="product_back_btn" href="./catalog">Вся продукция </a>
+    <section class="product-page"> <a class="product_back_btn" href="./catalog">Все услуги </a>
       <div class="m-container single-page-container"> 
         <div class="m-row">
           <div class="m-col">
             <div class="product-title">
-              <h1><?php the_field('catalog_title'); ?></h1>
+              <h1><?php the_title(); ?></h1>
             </div>
           </div>
         </div>
         <?php
           $mainPhoto = get_field('main_img');
-          $specPhoto = get_field('photo_spec');
+          $specPhoto = get_field('photo_spec'); 
         ?>
         <div class="m-row">
           <div class="m-col m-col--4 m-col-md--10">
@@ -35,11 +35,13 @@
           </div>
           <div class="m-col m-col--6 m-col-md--10">
             <div class="product-overlay">
-              <div class="product-img">   
-                <div class="img-block">     
-                  <div class="barrel"><img class="barrel-img" src="<?php echo $mainPhoto; ?>" alt="barrel"></div>
-                </div>
-              </div>
+              <!-- <div class="product-img">    -->
+                <!-- <div class="img-block">      -->
+                  <div class="barrel">
+                    <img class="barrel-img" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="barrel">
+                  </div>
+                <!-- </div> -->
+              <!-- </div> -->
             </div>
           </div>
         </div>

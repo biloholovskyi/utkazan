@@ -19,7 +19,7 @@
   ymaps.ready(init);
 function init(){
 var myMap = new ymaps.Map("map", {
-  center: [44.997884, 41.063663],
+  center: [<?php the_field('maps_coordinate'); ?>],
   zoom: 17
 });
 
@@ -34,7 +34,7 @@ myMap.controls
   .remove('zoomControl')
   .remove('geolocationControl');
 
-var myPin = new ymaps.Placemark([44.997884, 41.063663],
+var myPin = new ymaps.Placemark([<?php the_field('maps_coordinate'); ?>],
   {
     balloonContentHeader: '',
     balloonContentBody: '',

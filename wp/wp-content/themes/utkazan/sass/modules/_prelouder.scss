@@ -9,13 +9,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #fff; 
   transition: all .6s;
-
+  padding: 0 10px;
   .prelouder-logo {
     object-position: center;
     object-fit: contain;
-    width: 700px;
-    height: 330px;
+    width: 100px;
+    height: 112px;
+  }
+  .text-preloader {
+    font-family: 'Bank Sans EF CY',sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: .04em;
+    color: #333;
+    margin-left: 20px;
   }
 }

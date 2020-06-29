@@ -10,21 +10,40 @@ Template Name: about
           <div class="m-col m-col--4 m-col-md--5 m-col-xs--10"> 
             <div class="about-title"> 
               <h2>О компании</h2>
-              <p><?php the_field('company_desc'); ?></p>
+             
             </div>
           </div>
-          <div class="m-col m-col--3 m-col-md--1 m-col-xs--10"> </div>
-          <div class="m-col m-col--3 m-col-md--4 m-col-xs--10">
-            <div class="about__company__numbers">
-              <div class="about__company__number anim-number"><?php the_field('year_company'); ?></div>
-              <div class="about__company__desc">год основания компании </div>
-            </div>
+          <div class="m-col m-col--2 m-col-md--1 m-col-xs--10"> </div>
+          <div class="m-col m-col--4 m-col-md--4 m-col-xs--10">
+          <div class="about-title">
+          <p><?php the_field('company_desc'); ?></p>
+          </div>
           </div>
         </div>
         <?php $companyImg = get_field('company_img'); ?>
         <div class="m-row">
+          <?php $numbers_block = get_field('number_block'); ?>
           <div class="m-col m-col-lg--10">
-            <div class="photo-team"><img src="<?php echo $companyImg; ?>" alt="photo team"></div>
+            <div class="photo-team">
+              <div class="about__company__numbers">
+                <div class="about__company__number "><?php echo $numbers_block['numbers']; ?></div>
+                <div class="about__company__desc"><?php echo $numbers_block['number_text']; ?> </div>
+              </div>
+              <div class="about__company__numbers">
+                <div class="about__company__number "><?php echo $numbers_block['numbers2']; ?></div>
+                <div class="about__company__desc"><?php echo $numbers_block['number_text2']; ?> </div>
+              </div>
+              <div class="about__company__numbers">
+                <div class="about__company__number "><?php echo $numbers_block['numbers3']; ?></div>
+                <div class="about__company__desc"><?php echo $numbers_block['number_text3']; ?> </div>
+              </div>
+              <div class="about__company__numbers">
+                <div class="about__company__number "><?php echo $numbers_block['numbers4']; ?></div>
+                <div class="about__company__desc"><?php echo $numbers_block['number_text4']; ?> </div>
+              </div>
+              <img src="<?php echo $companyImg; ?>" alt="photo team">
+             
+            </div>
           </div>
         </div>
       </div>
@@ -34,6 +53,7 @@ Template Name: about
         <div class="m-row">
           <div class="m-col m-col--15">
             <div class="about_company_info">
+            
               <p><?php the_field('company_text'); ?></p> 
             </div>
           </div>
@@ -45,7 +65,7 @@ Template Name: about
         <div class="m-row">
           <div class="m-col m-col--5 m-col-md--10">
             <div class="principles-title">
-              <h3>Принципы компании</h3>
+              <h3>Наши преимущества</h3>
             </div>
             <div class="principles-list">
               <ul>
@@ -80,7 +100,7 @@ Template Name: about
               <div class="about__video-bg"></div>
               <div class="about__video-close"></div>
               <?php $images = get_field('images2'); ?>
-              <video class="about__videoblock" id="about-video" src="<?php echo get_template_directory_uri(); ?>/media/video/about.mp4" playsinline muted autoplay loop preload="" controls></video>
+              <video class="about__videoblock" id="about-video" src="<?php the_field('images2'); ?>" playsinline muted autoplay loop preload="" controls></video>
               <!-- <img src="<?php echo $images; ?>" alt="image"> -->
               <div class="video__play"></div>
               <div class="video__time">4:01</div>

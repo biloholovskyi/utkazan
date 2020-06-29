@@ -137,7 +137,7 @@
     }
 
     .header__logo {
-      width: 143.66px;
+      width: 100%;
       height: 40px;
     }
 
@@ -349,6 +349,9 @@
                   margin-bottom: 20px;
               }
           }  
+          .header__logo {
+            margin-bottom: 20px;
+          }
       }
       .footer-doc {
         flex-direction: column-reverse;

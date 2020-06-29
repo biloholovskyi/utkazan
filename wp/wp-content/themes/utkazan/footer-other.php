@@ -1,13 +1,17 @@
 <footer class="footer">
-      <div class="footer__nav"><a class="header__logo" href="/"><img src="<?php echo get_template_directory_uri(); ?>/media/icon/removebg.png"></a>
+      <div class="footer__nav">
+          <a class="header__logo" href="/">
+          <img src="<?php echo get_template_directory_uri(); ?>/media/icon/logo-footer.svg">
+          <div class="text-logo">Объединенные<br>Технологии</div>
+        </a>
         <div class="header__nav">
-          <a class="nav__link" href="./products.html">Продукция</a>
+          <a class="nav__link" href="./products.html">Услуги</a>
           <a class="nav__link" href="./about">О компании</a>
           <a class="nav__link" href="./contacts">Контакты</a></div>
         <button class="header__button main-modal-show">Связаться</button>
       </div>
       <div class="footer-doc">
-        <p>© Официальный сайт компании <br> Все права защищены.</p><a href="<?php the_field('politics'); ?>" target="_blank"> Политика конфиденциальности</a>
+        <p>© Официальный сайт компании  ООО &#171;Объединенные Технологии&#187;  <br> Все права защищены .</p><a href="<?php the_field('politics');?>" target="_blank"> Политика конфиденциальности</a>
       </div>
     </footer>
     <div class="alert-modal">

@@ -49,8 +49,11 @@
   // preluder
   .prelouder {
     .prelouder-logo {
-      width: 222px;
-      height: 71px;
+      width: 70px;
+     
+    }
+    .text-preloader {
+      font-size: 21px;
     }
   }
   // preluder end
@@ -250,6 +253,17 @@
       font-size: 14px;
       line-height: 20px;
       }
+    }
+  }
+  .header .header__logo {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 48px;
+    }
+    .text-logo {
+      margin-left: 12px;
+      font-size: 12px;
     }
   }
 }
