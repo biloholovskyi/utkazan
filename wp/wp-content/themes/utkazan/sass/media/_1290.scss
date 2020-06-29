@@ -256,13 +256,12 @@
   // home man end
 
   // partner
-  .partner__fon-img {
-    width: 700px;
-  }
+  
 
   .partner__title {
-    font-size: 28px;
+        font-size: 40px;
     line-height: 120%;
+    margin-top: 50px;
   }
 
   .partner__desc {
@@ -302,6 +301,14 @@
     }
   }
   // about page end
+  .product-page .product-desc .product-content {
+    justify-content: center;
+  }
+  .product-page .product-desc p {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 800px;
+  }
    // single-product-page
    .product-page {
     .product_next_btn {
@@ -337,4 +344,11 @@
     }
   }
   // products end
+  .servis-row {
+    .servis-link {
+      .empty {
+        display: none;
+      }
+    }
+  }
 }

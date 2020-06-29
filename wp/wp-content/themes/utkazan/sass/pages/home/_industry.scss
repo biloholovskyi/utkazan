@@ -1,8 +1,10 @@
 .industry {
   background: #3586DC;
-  padding-top: 350px;
+  padding: 100px 0;
   display: flex;
-
+  opacity: 1;
+  z-index: 50;
+  align-items: center;
   .industry__title {
     font-family: 'Bank Sans EF CY', sans-serif;
     font-style: normal;
@@ -12,6 +14,31 @@
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 50px;
+    z-index: 10;
+    position: relative;
+  }
+
+  .industry-left {
+    p {
+      font-family: 'Proxima Nova', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 35px;
+      color: #fff;
+      margin-bottom: 20px;
+      max-width: 700px;
+      z-index: 10;
+      position: relative;
+    }
+  }
+  .industry-right {
+    z-index: 10;
+    position: relative;
+    & .partner__text:first-child {
+      border-bottom: 1px solid #fff;
+      
+    }
   }
 
   .industry__desc {
@@ -25,33 +52,24 @@
     margin-bottom: 50px;
   }
 
-  .industry__list-wrapper {
-    position: relative;
-    width: 100%;
-    height: 650px;
-    overflow: hidden;
+  // .industry__list-wrapper {
+  //   position: relative;
+  //   width: 100%;
+  //   height: 650px;
+  //   overflow: hidden;
 
-    &::after {
-      content: '';
-      height: 236px;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      bottom: 0; 
-      background: linear-gradient(180deg, rgba(53, 134, 220, 0) 0%, #3586DC 81.25%);
-    }
-  }
+  //   &::after {
+  //     content: '';
+  //     height: 236px;
+  //     position: absolute;
+  //     width: 100%;
+  //     left: 0;
+  //     bottom: 0;
+  //     background: linear-gradient(180deg, rgba(53, 134, 220, 0) 0%, #3586DC 81.25%);
+  //   }
+  // }
 
-  .industry__list {
-    max-height: calc(100vh - 350px);
-    overflow: auto;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    padding-bottom: 180px;
-    display: flex;
-    flex-wrap: wrap;
-
-    &::-webkit-scrollbar { width: 0; }
+  
 
     // .item {
     //   display: flex; 
@@ -96,7 +114,7 @@
     //     }
     //   }
     // }
-  }
+  
 
   // .industry__left {
   //   height: 100%;
@@ -105,42 +123,52 @@
   //   justify-content: space-between;
   // }
 
-//   .industry__numbers {
-//     .industry__number {
-//       font-family: 'Bank Sans EF CY', sans-serif;
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 90px;
-//       line-height: 108px;
-//       letter-spacing: -0.1em;
-//       color: #FFFFFF;
-//       position: relative;
+  //   .industry__numbers {
+  //     .industry__number {
+  //       font-family: 'Bank Sans EF CY', sans-serif;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       font-size: 90px;
+  //       line-height: 108px;
+  //       letter-spacing: -0.1em;
+  //       color: #FFFFFF;
+  //       position: relative;
 
-//       &::after {
-//         content: '';
-//         position: absolute;
-//         width: 25px;
-//         height: 25px;
-//         top: -12.5px;
-//         left: -12.5px;
-//         background-image: url(../media/icon/border.svg);
-//         background-position: center;
-//         background-size: contain;
-//         background-repeat: no-repeat;
-//       }
-//     }
+  //       &::after {
+  //         content: '';
+  //         position: absolute;
+  //         width: 25px;
+  //         height: 25px;
+  //         top: -12.5px;
+  //         left: -12.5px;
+  //         background-image: url(../media/icon/border.svg);
+  //         background-position: center;
+  //         background-size: contain;
+  //         background-repeat: no-repeat;
+  //       }
+  //     }
 
-//     .industry__desc {
-//       font-family: 'Proxima Nova', sans-serif;
-//       font-style: normal;
-//       font-weight: normal;
-//       font-size: 15px;
-//       line-height: 22px;
-//       color: #FFFFFF;
-//     }
-//   }
+  //     .industry__desc {
+  //       font-family: 'Proxima Nova', sans-serif;
+  //       font-style: normal;
+  //       font-weight: normal;
+  //       font-size: 15px;
+  //       line-height: 22px;
+  //       color: #FFFFFF;
+  //     }
+  //   }
 
-//   &__numbers {
+  //   &__numbers {
 
-//   }
+  //   }
+
+  .indst-wrap {
+    display: flex;
+    .industry-left {
+      flex: 50%;
+    }
+    & .industry-left:first-child {
+      margin-right: 50px;
+    }
+  }
 }

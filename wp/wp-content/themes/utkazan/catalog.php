@@ -39,7 +39,7 @@ Template Name: Catalog
       ?>
     <div class="m-row servis-row">
      <a href="<?php the_permalink(); ?>" class="servis-link">
-     <div class="m-col m-col--4 m-col-lg--4 m-col-md--10">
+     <div class="m-col m-col--10 m-col-lg--4 m-col-md--5 m-col-sm--10">
         <div class="servis__img">
           <div class="servis__img-bg"></div>
           <?php $images = get_field('images2'); ?>
@@ -47,8 +47,8 @@ Template Name: Catalog
          
         </div>
       </div>
-      <div class="m-col m-col--1"></div>
-      <div class="m-col m-col--5 m-col-lg--5 m-col-md--10">
+      <div class="m-col m-col--1 empty"></div>
+      <div class="m-col m-col--10 m-col-lg--5 m-col-md--5 m-col-sm--10">
         <div class="servis-text">
           <h2><?php the_title(); ?></h2> 
           <p><?php the_field('catalog_desc'); ?></p>
