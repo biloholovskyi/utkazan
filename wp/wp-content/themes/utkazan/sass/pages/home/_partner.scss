@@ -3,6 +3,20 @@
   opacity: 1;
   z-index: 50;
   padding: 80px 0;
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(222.75deg,rgba(82,157,227,0) -35.37%,rgba(23,117,204,.76) 66.63%,#1775cc 87.8%);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+  }
   &__fon-img {
     position: absolute;
     object-fit: cover;
@@ -32,8 +46,8 @@
     flex-direction: column;
     justify-content: center;
     height: 100%; 
-    padding-bottom: 30px;
-    margin-bottom: 50px;
+  
+    margin-bottom: 20px; 
     // border-bottom: 1px solid #fff;
     max-width: 300px;
   }

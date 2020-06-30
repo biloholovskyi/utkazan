@@ -16,9 +16,6 @@ Template Name: Catalog
     <div class="m-container">
     <div class="m-row">
       <div class="m-col">
-        <div class="products-title">
-          <h1>Услуги</h1>
-        </div>
       </div>
     </div>
     </div>

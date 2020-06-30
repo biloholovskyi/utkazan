@@ -23,8 +23,8 @@ Template Name: about
         <?php $companyImg = get_field('company_img'); ?>
         <div class="m-row">
           <?php $numbers_block = get_field('number_block'); ?>
-          <div class="m-col m-col-lg--10">
-            <div class="photo-team">
+          <div class="m-col m-col m-col-lg--10">
+            <div class="photo-team number-team">
               <div class="about__company__numbers">
                 <div class="about__company__number "><?php echo $numbers_block['numbers']; ?></div>
                 <div class="about__company__desc"><?php echo $numbers_block['number_text']; ?> </div>
@@ -41,8 +41,11 @@ Template Name: about
                 <div class="about__company__number "><?php echo $numbers_block['numbers4']; ?></div>
                 <div class="about__company__desc"><?php echo $numbers_block['number_text4']; ?> </div>
               </div>
-              <img src="<?php echo $companyImg; ?>" alt="photo team">
-             
+            </div>
+          </div>
+          <div class="m-col m-col--10 m-col-lg--10">
+            <div class="photo-team">
+            <img src="<?php echo $companyImg; ?>" alt="photo team"> 
             </div>
           </div>
         </div>

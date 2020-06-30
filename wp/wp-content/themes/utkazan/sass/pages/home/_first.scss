@@ -194,6 +194,7 @@
     justify-content: center;
     align-items: center;
     transition: .4s;
+    transform: rotate(90deg);
       span {
         display: none;
       }
@@ -211,7 +212,7 @@
     height: 13px;
     }
     .owl-prev {
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
     }
   }
 }

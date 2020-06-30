@@ -90,9 +90,9 @@
     }
   }
   .about_company {
-    padding: 350px 0 50px;
+    padding: 150px 0 50px;
     .about_company_info {
-      padding-bottom: 100px;
+     
       p {
         font-size: 14px;
         text-align: justify;
@@ -274,7 +274,21 @@
       }
       }
     }
-    .photo-team {
-      transform: translateY(30%)!important;
+    .about .photo-team {
+      margin-bottom: -100px;
+    height: 200px;
+    }
+    .about .number-team {
+      height: 600px;
+      transform: none;
+      margin-bottom: 0;
+      .about__company__numbers {
+        .about__company__number  {
+          font-size: 65px;
+        }
+        .about__company__desc {
+          margin-bottom: 15px;
+        }
+      }
     }
 }
