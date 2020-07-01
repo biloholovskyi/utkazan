@@ -13,11 +13,7 @@ Template Name: Catalog
           fill="#C1C1C1"></path>
       </g>
     </svg></a>
-    <div class="m-container">
-    <div class="m-row">
-      <div class="m-col">
-      </div>
-    </div>
+    <div class="m-container title-container">
     </div>
   <div class="m-container">
   <?php

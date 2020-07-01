@@ -11,7 +11,27 @@
         <button class="header__button main-modal-show">Связаться</button>
       </div>
       <div class="footer-doc">
-        <p>© Официальный сайт компании  ООО &#171;Объединенные Технологии&#187;  <br> Все права защищены .</p><a href="<?php the_field('politics');?>" target="_blank"> Политика конфиденциальности</a>
+        <p>© Официальный сайт компании  ООО &#171;Объединенные Технологии&#187;  <br> Все права защищены .</p>
+        <?php
+          $args = array(
+            'numberposts' => 1, // если -1 то выводит все
+            'orderby' => 'date',
+            'order' => 'ASC',
+            'post_type' => 'politics', // тип поста
+            'suppress_filters' => true,
+          );
+
+          $posts = get_posts($args);
+
+          foreach ($posts as $post) {
+            setup_postdata($post);
+            ?>
+        <a href="<?php the_field('politics');?>" target="_blank" download> Политика конфиденциальности</a>
+        <?php
+          }
+          wp_reset_postdata(); // сброс
+          ?>
+
       </div>
     </footer>
     <div class="alert-modal">

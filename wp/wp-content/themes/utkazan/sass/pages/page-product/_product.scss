@@ -4,7 +4,9 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-
+  .title-container {
+    padding-top: 200px;
+  }
   .products-title {
     text-align: center;
 
@@ -67,17 +69,17 @@
       line-height: 77px;
       letter-spacing: .02em;
       color: #3c3c3b;
-      margin-bottom: 50px;
+      margin-bottom: 60px; 
       position: relative;
       text-shadow: 0 0 black;
     }
 
-    p {
-      font-family: 'Proxima Nova', sans-serif;
+    p { 
+      font-family: 'Proxima Nova', sans-serif; 
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
-      line-height: 25px;
+      line-height: 25px; 
       color: #3c3c3b;
     }
   }

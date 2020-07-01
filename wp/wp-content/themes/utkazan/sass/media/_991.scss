@@ -390,6 +390,12 @@
       top: 165px;
       left: 20px;
     }
+    .product-title {
+      margin-top: 0;
+     h1 {
+      margin-bottom: 80px;
+     }
+    }
   }
   // single-product-page end
 
@@ -487,8 +493,14 @@
     }
   }
   // products slider end
+  .products {
+    .title-container {
+      padding-top: 100px;
+    }
+  }
   .products .servis-row {
     margin-bottom: 100px;
+   
     .servis-link {
       flex-direction: column!important;
       .servis__img {

@@ -15,6 +15,7 @@
         <div class="m-row">
           <div class="m-col m-col--4 m-col-md--10">
             <div class="product-desc">
+              <h2><?php the_field('product-title'); ?></h2>
               <p><?php the_field('catalog_desc'); ?></p>
               <div class="product-content">
                 <div class="desc">
