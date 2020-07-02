@@ -48,8 +48,8 @@
     z-index: 10;
     position: relative;
     & .partner__text:first-child {
+      padding-bottom: 20px;
       border-bottom: 1px solid #fff;
-      
     }
   }
 
@@ -178,6 +178,12 @@
     display: flex;
     .industry-left {
       flex: 50%;
+
+      p {
+        strong {
+          color: #f97b36;
+        }
+      }
     }
     & .industry-left:first-child {
       margin-right: 50px;

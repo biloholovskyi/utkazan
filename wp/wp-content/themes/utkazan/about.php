@@ -103,10 +103,7 @@ Template Name: about
               <div class="about__video-bg"></div>
               <div class="about__video-close"></div>
               <?php $images = get_field('images2'); ?>
-              <video class="about__videoblock" id="about-video" src="<?php the_field('images2'); ?>" playsinline muted autoplay loop preload="" controls></video>
-              <!-- <img src="<?php echo $images; ?>" alt="image"> -->
-              <div class="video__play"></div>
-              <div class="video__time">4:01</div>
+               <img src="<?php echo $images; ?>" alt="image">
             </div>
             <!-- <div class="principles__right">
               <p>“Дефотек” сегодня - это точный, отлаженный как швейцарские часы механизм. Здесь старательно выполняют свою работу службы логистики, маркетинга, контроля качества и доставки.<br><br> <span>На протяжении многих лет компания остается крупнейшим поставщиком различной химии для сахарной промышленности.</span>    </p>

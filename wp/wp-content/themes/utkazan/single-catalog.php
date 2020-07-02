@@ -1,10 +1,9 @@
 <?php get_header('white'); ?>
     <section class="product-page"> <a class="product_back_btn" href="./catalog">Все услуги </a>
-      <div class="m-container single-page-container"> 
+      <div class="m-container single-page-container">
         <div class="m-row">
           <div class="m-col">
             <div class="product-title">
-              <h1><?php the_title(); ?></h1>
             </div>
           </div>
         </div>

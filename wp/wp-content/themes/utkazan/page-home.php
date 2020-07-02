@@ -5,20 +5,9 @@ Template Name: Home
 ?>
 <?php get_header(); ?>
 
-<!-- <div class="fullPageNav" id="fullPageNav">
-      <div class="fullPageNav__delimiter fullPageNav__delimiter--first"></div>
-      <div class="fullPageNav__item fullPageNav__item--active" data-number="1"></div>
-      <div class="fullPageNav__delimiter"></div>
-      <div class="fullPageNav__item" data-number="2" data-anim="true"></div>
-      <div class="fullPageNav__delimiter"></div>
-      <div class="fullPageNav__item" data-number="3" data-anim="true"></div>
-      <div class="fullPageNav__delimiter fullPageNav__delimiter"></div>
-      <div class="fullPageNav__item" data-number="4"></div>
-      <div class="fullPageNav__delimiter fullPageNav__delimiter--last"></div>
-    </div> -->
 <div class="fullPageWrapper">
   <section class="fullPage home__first"
-    style="background-image: url(<?php echo get_template_directory_uri(); ?>/media/image/home.jpg)">
+    style="background-image: url(<?php the_field('home_img-fon'); ?>)">
     <div class="m-container first__container">
       <div class="m-row first__row">
         <div class="m-col m-col--2 m-col-sm--10"></div>
@@ -48,7 +37,6 @@ Template Name: Home
                     wp_reset_postdata(); // сброс
                     ?>
             </div>
-            <!-- <button class="first__button-down" data-number="2"></button> -->
           </div>
         </div>
       </div>

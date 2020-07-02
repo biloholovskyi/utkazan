@@ -5,9 +5,9 @@
           <div class="text-logo">Объединенные<br>Технологии</div>
         </a>
         <div class="header__nav">
-          <a class="nav__link" href="./catalog">Услуги</a>
-          <a class="nav__link" href="./about">О компании</a>
-          <a class="nav__link" href="./contacts">Контакты</a></div>
+          <a class="nav__link" href="/catalog">Услуги</a>
+          <a class="nav__link" href="/about">О компании</a>
+          <a class="nav__link" href="/contacts">Контакты</a></div>
         <button class="header__button main-modal-show">Связаться</button>
       </div>
       <div class="footer-doc">
@@ -26,7 +26,7 @@
           foreach ($posts as $post) {
             setup_postdata($post);
             ?>
-        <a href="<?php the_field('politics');?>" target="_blank" download> Политика конфиденциальности</a>
+        <a href="<?php the_field('politics');?>" target="_blank"> Политика конфиденциальности</a>
         <?php
           }
           wp_reset_postdata(); // сброс

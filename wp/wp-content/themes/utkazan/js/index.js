@@ -4,7 +4,6 @@ import './particles';
 import {manSliderNext, manSliderClick} from "./manSlider";
 import {toggleMobileMenu} from "./mobileMenu";
 import {switchModalType, disabledPolitical, closeModalForm, openModalForm} from "./modalForm";
-import {play, close} from "./aboutVideo";
 import './accordion';
 import './owl.carousel.min';
 import './productSlider';
@@ -41,8 +40,6 @@ $(document).ready(function() {
   $('.political__check').on('click', disabledPolitical);
   $('.modal-body__close').on('click', closeModalForm);
   $('.main-modal-show').on('click', openModalForm);
-  $('.about__video').on('click', play);
-  $('.about__video-close').on('click', close);
 
   $('.first__button-down').on('click', () => {
     if($(window).width() < 992) {

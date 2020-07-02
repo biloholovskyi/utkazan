@@ -34,37 +34,35 @@ gulp.task('pug', function () {
     .pipe(gulp.dest('app/build'));
 })
 
-gulp.task('default', function() {
+gulp.task('default', function () {
   browserSync.init({
-        server: {
-            baseDir: "./wp/wp-content/themes/utkazan"
-        }
-    });
-    gulp.watch("app/pug/**/*.pug", function () {
-        return gulp.src('app/pug/pages/*.pug')
-            .pipe(pug({
-                pretty: true
-            }))
-            .pipe(gulp.dest('app/'))
-            .pipe(browserSync.reload({stream: true}));
-    });
-    gulp.watch("wp/wp-content/themes/utkazan/sass/**/*.scss", function () {
-        return gulp.src("wp/wp-content/themes/utkazan/sass/**/*.scss")
-          .pipe(sass())
-          .pipe(autoprefixer({
-            overrideBrowserslist: ['> 0.1%'],
-            cascade: false
-          }))
-          .pipe(cleanCSS({
-            level: 2
-          }))
-          .pipe(gulp.dest("wp/wp-content/themes/utkazan/css"))
-          .pipe(browserSync.stream());
-    });
-    gulp.watch("wp/wp-content/themes/utkazan/js/**/*.js", function () {
-      return gulp.src("wp/wp-content/themes/utkazan/js/index.js")
-        .pipe(webpack(webConfig))
-        .pipe(gulp.dest("wp/wp-content/themes/utkazan/buildjs"))
-        .pipe(browserSync.stream());
-    });
+    proxy: "http://localhost:8888/utkazan/wp"
+  });
+  gulp.watch("app/pug/**/*.pug", function () {
+    return gulp.src('app/pug/pages/*.pug')
+      .pipe(pug({
+        pretty: true
+      }))
+      .pipe(gulp.dest('app/'))
+      .pipe(browserSync.reload({stream: true}));
+  });
+  gulp.watch("wp/wp-content/themes/utkazan/sass/**/*.scss", function () {
+    return gulp.src("wp/wp-content/themes/utkazan/sass/**/*.scss")
+      .pipe(sass())
+      .pipe(autoprefixer({
+        overrideBrowserslist: ['> 0.1%'],
+        cascade: false
+      }))
+      .pipe(cleanCSS({
+        level: 2
+      }))
+      .pipe(gulp.dest("wp/wp-content/themes/utkazan/css"))
+      .pipe(browserSync.stream());
+  });
+  gulp.watch("wp/wp-content/themes/utkazan/js/**/*.js", function () {
+    return gulp.src("wp/wp-content/themes/utkazan/js/index.js")
+      .pipe(webpack(webConfig))
+      .pipe(gulp.dest("wp/wp-content/themes/utkazan/buildjs"))
+      .pipe(browserSync.stream());
+  });
 });

@@ -41,7 +41,6 @@
       .first__title {
         font-size: 40px;
         line-height: 120%;
-        margin-top: 80px;
       }
     }
 
@@ -301,8 +300,16 @@
     }
   }
   // about page end
-  .product-page .product-desc .product-content {
-    justify-content: center;
+  .product-page {
+    .product-desc {
+      h2 {
+        text-align: center;
+      }
+
+      .product-content {
+        justify-content: center;
+      }
+    }
   }
   .product-page .product-desc p {
     margin: 0 auto;
