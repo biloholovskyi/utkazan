@@ -1,21 +1,14 @@
 <?php
-session_start();
-require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
-$name = $_POST['text'];
-$tel = $_POST['contact'];
 
-$arr = array(
-  'Имя: ' => $name,
-  'Телефон: ' => $tel,
-);
+$contact = $_POST['contact'];
+$text = $_POST['text'];
 
-foreach ($arr as $key => $value) {
-  $txt .= "<b>".$key."</b> ".$value."%0A";
-};
+$message = "Имя/Телефон: ".$contact."\n".$text;
+$headers = 'From: kazansrm@mail.ru' . "\r\n" .
+           'Reply-To: kazansrm@mail.ru' . "\r\n" .
+           'X-Mailer: PHP/' . phpversion();
 
-$multiple_to_recipients = array(
-  ''
-);
-
-wp_mail($multiple_to_recipients, "Новая заявка", "Имя: ".$name." | Номер: ".$tel);
-
+mail('kazansrm@mail.ru', "Вопрос с сайта", $message, $headers);
+//mail('albertgaifullin@gmail.com', "Вопрос с сайта", $message, $headers);
+//mail('sales@vividoil.ru', "Вопрос с сайта", $message, $headers);
+//mail('pkorchagin@vividoil.ru', "Вопрос с сайта", $message, $headers);
